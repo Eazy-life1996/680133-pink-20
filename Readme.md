@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Юрий  Пустовой](https://up.htmlacademy.ru/adaptive/20/user/680133).
-* Наставник: `Неизвестно`.
+- Студент: [Юрий Пустовой](https://up.htmlacademy.ru/adaptive/20/user/680133).
+- Наставник: [Дмитрий Беллавин](https://htmlacademy.ru/profile/bellavin).
 
 ---
 
