@@ -38,6 +38,195 @@
           Конкурс на самое безбашенное путешествие с Пинк
         </h2>
       </section>
+      <section class="page-title">
+        <h2 class="visually-hidden">Поделитесь фото и выиграйте приз</h2>
+        <p class="page-title__description">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!
+        </p>
+      </section>
+      <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="form__field">
+          <ul class="form__list">
+            <li class="from__item">
+              <label class="form__label">
+                Фамилия:
+                <input
+                  class="form__input"
+                  type="text"
+                  name="surname"
+                  placeholder="Укажите фамилию *"
+                  required
+                />
+              </label>
+            </li>
+            <li class="from__item">
+              <label class="form__label">
+                Имя:
+                <input
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  placeholder="Укажите имя *"
+                  required
+                />
+              </label>
+            </li>
+            <li class="from__item">
+              <label class="form__label">
+                Отчество:
+                <input
+                  class="form__input"
+                  type="text"
+                  name="patronymic"
+                  placeholder="Ну и отчество тоже"
+                />
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__field--grey">
+          <legend class="form__legend">
+            Ваши безбашенные достижения в путешествии
+          </legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label-check">
+                <input
+                  class="form__input-check"
+                  type="checkbox"
+                  name="shark"
+                  checked
+                />
+                Сделал селфи с акулой
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label-check">
+                <input
+                  class="form__input-check"
+                  type="checkbox"
+                  name="beach"
+                  checked
+                />
+                Обгорел на пляже
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label-check">
+                <input
+                  class="form__input-check"
+                  type="checkbox"
+                  name="chack-norris"
+                />
+                Видел Чака Норриса
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label-check">
+                <input
+                  class="form__input-check"
+                  type="checkbox"
+                  name="souvenirs"
+                />
+                Накупил сувениров
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label-check">
+                <input
+                  class="form__input-check"
+                  type="checkbox"
+                  name="tower"
+                  checked
+                />
+                Удержал башню
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label-check">
+                <input
+                  class="form__input-check"
+                  type="checkbox"
+                  name="broke-hotel"
+                />
+                Разгромил отель
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__field">
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label">
+                Номер телефона
+                <input
+                  type="tel"
+                  name="phone"
+                  value="Номер, пожалуйста"
+                  pattern="+79[0-9]{9}|8[0-9]{10}"
+                />
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label">
+                Адрес почты
+                <input
+                  type="email"
+                  name="email"
+                  value="Введите почту *"
+                  required
+                />
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__field--grey">
+          <legend class="form__legend">
+            С каким приложением путешествовали?
+          </legend>
+          <label class="form__label-check">
+            <input
+              class="form__radio"
+              type="radio"
+              name="pink-aplication"
+              value="iOS"
+            />
+            Pink для iOS
+          </label>
+          <label class="form__label-check">
+            <input
+              class="form__radio"
+              type="radio"
+              name="pink-aplication"
+              value="android"
+            />
+            Pink на Android
+          </label>
+          <label class="form__label-check">
+            <input
+              class="form__radio"
+              type="radio"
+              name="pink-aplication"
+              value="Windows-Phone"
+            />
+            Windows Phone
+          </label>
+        </fieldset>
+        <fieldset class="form__field">
+          <legend class="form__legend">Опишите свои эмоции</legend>
+          <textarea class="form__comment" name="emotion" cols="25" rows="10">
+            Можно прям в красках, не стесняясь в выражениях
+          </textarea>
+          <button class="form__button btn btn--green" type="submit">
+            Отправить форму
+          </button>
+          <p class="form__p-info">
+            <span class="form__star">*</span> — обязательные поля
+          </p>
+        </fieldset>
+      </form>
     </main>
 
     <footer class="page-footer">

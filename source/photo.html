@@ -36,14 +36,17 @@
       <section class="intro">
         <h2 class="intro__title">Фотографии <br />пользователей</h2>
       </section>
+      <section class="page-title">
+        <h2 class="visually-hidden">
+          Смотрите фотографии других пользователей
+        </h2>
+        <p class="page-title__description">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как
+          не хватает ваших?
+        </p>
+      </section>
       <section class="photo">
         <h2 class="visually-hidden">перечень фотографий</h2>
-        <div class="photo__header">
-          <p class="photo__description">
-            Взгляните на фотографии, которые выкладывают пользователи! Видите,
-            как не хватает ваших?
-          </p>
-        </div>
         <ul class="photo__list">
           <li class="photo__item">
             <div class="photo__best-today">Панорама дня</div>
@@ -231,6 +234,47 @@
           </li>
         </ul>
       </section>
+      <section class="description-form">
+        <h2 class="visually-hidden">выложите свое фото</h2>
+        <p class="description-form__description">
+          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        </p>
+      </section>
+      <form
+        class="form-photo"
+        action="https://echo.htmlacademy.ru"
+        method="POST"
+      >
+        <fieldset class="form-photo__fieldset">
+          <img
+            src="img/jpg"
+            width="280"
+            height="374"
+            alt="ваше фото для редактирования"
+          />
+          <label class="form-photo__crop form-photo__crop--active">
+            <input
+              class="form-photo__range form-photo__range--active"
+              type="range"
+              name="crop"
+            />
+          </label>
+          <label class="form-photo__fill">
+            <input class="form-photo__range" type="range" name="fill" />
+          </label>
+          <label class="form-photo__contrast">
+            <input class="form-photo__range" type="range" name="contrast" />
+          </label>
+        </fieldset>
+        <fieldset class="form-photo__fildset">
+          <button class="form-photo__button btn btn--pink" type="submit">
+            Запостить
+          </button>
+          <button class="form-photo__button btn btn--grey" type="reset">
+            Отмена
+          </button>
+        </fieldset>
+      </form>
     </main>
 
     <footer class="page-footer">
