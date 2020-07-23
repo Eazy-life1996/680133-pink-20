@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="page__body">
+  <body>
     <header class="page-header">
       <a class="page-header__logo">
         <img
@@ -33,7 +34,7 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Приложение пинк!</h1>
-      <section class="intro--main">
+      <section class="intro--home">
         <h2 class="intro__title">
           Взгляните на жизнь<br />
           иначе!
@@ -44,7 +45,7 @@
         <a class="download__link" href="https://www.apple.com/ru/ios/app-store/"
           >Скачать приложение</a
         >
-        <ul class="download">
+        <ul class="download__list">
           <li class="download__item">
             <a
               class="download__link"
@@ -86,29 +87,33 @@
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </section>
+      <section class="page-title--home">
+        <h2 class="visually-hidden">Слоган</h2>
+        <p class="page-title__description">
+          Устали от серости мегаполиса?
+        </p>
+        <p class="page-title__description--second">
+          Нам есть, что вам предложить!
+        </p>
+      </section>
       <section class="advantages">
         <h2 class="visually-hidden">Перечень преймуществ</h2>
-        <div class="advantages__header">
-          <h2 class="advantages__title">
-            Устали от серости мегаполиса? Нам есть, что вам предложить!
-          </h2>
-        </div>
         <ul class="advantages__list">
-          <li class="advantages__items">
+          <li class="advantages__item">
             <h3 class="advantages__subtitle">Поднимает настроение</h3>
             <p class="advantages__description">
               Приложение позволит вам победить осеннюю хандру и депрессию
               буквально в несколько кликов!
             </p>
           </li>
-          <li class="advantages__items">
+          <li class="advantages__item">
             <h3 class="advantagest__subtitle">Меняет мир вокруг</h3>
             <p class="advantages__description">
               Сделайте снимок и украсьте его смайликом или текстовой подписью,
               чтобы усилить эффект
             </p>
           </li>
-          <li class="advantages__items">
+          <li class="advantages__item">
             <h3 class="advantages__subtitle">Заводит новых друзей</h3>
             <p class="advantages__description">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
@@ -122,6 +127,123 @@
           height="320"
           alt="Телефон с приложением пинк"
         />
+      </section>
+      <section class="comment">
+        <h3 class="comment__autor">Николай Петров</h3>
+        <p class="comment__text">
+          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+          привычные серые вещи! А еще я познакомился со своей будущей женой в
+          комментариях к выложенной фотографии!»
+        </p>
+        <div class="comment__toggle comment__toggle--active"></div>
+        <div class="comment__toggle"></div>
+        <div class="comment__toggle"></div>
+      </section>
+      <section class="rates">
+        <h2 class="visually-hidden">Таблицы тарифов</h2>
+        <table class="table">
+          <tr>
+            <th class="table__rate">
+              База 1,99 USD
+            </th>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">Розовый фильтр</td>
+            <td class="table__td">
+              <img class="table_img" src="img/svg" alt="галочка" />
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">Смайлики</td>
+            <td class="table__td">
+              <img class="table_img" src="img/svg" alt="крестик" />
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">Комментарии</td>
+            <td class="table__td">
+              <img class="table_img" src="img/svg" alt="крестик" />
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <tr>
+            <th class="table__rate">
+              Стандарт 3,99 USD <img src="img/svg" alt="Хит продаж" />
+            </th>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">Розовый фильтр</td>
+            <td class="table__td">
+              <img class="table_img" src="img/svg" alt="галочка" />
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">Смайлики</td>
+            <td class="table__td">
+              <img class="table_img" src="img/svg" alt="галочка" />
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">Комментарии</td>
+            <td class="table__td">
+              <img class="table_img" src="img/svg" alt="крестик" />
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <tr>
+            <th class="table__rate">
+              Анлим 9,99 USD
+            </th>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">Розовый фильтр</td>
+            <td class="table__td">
+              <img class="table_img" src="img/svg" alt="галочка" />
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">Смайлики</td>
+            <td class="table__td">
+              <img class="table_img" src="img/svg" alt="галочка" />
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <td class="table__td">Комментарии</td>
+            <td class="table__td">
+              <img class="table_img" src="img/svg" alt="галочка" />
+            </td>
+          </tr>
+        </table>
+        <div class="rates__toggle"></div>
+        <div class="rates__toggle rates__toggle--active"></div>
+        <div class="rates__toggle"></div>
+      </section>
+      <section class="connect">
+        <h2 class="connect__title">
+          Остались вопросы?<br />
+          Свяжитесь с нами!
+        </h2>
+        <ul class="connect__list">
+          <li class="connect__item">
+            <p class="connect__p">Звоните:</p>
+            <a class="connect__link" href="tel:+78125556666"
+              >+7 (812) 555-66-66</a
+            >
+          </li>
+          <li class="connect__item">
+            <p class="connect__p">Пишите:</p>
+            <a class="connect__link" href="#">mail@htmlacademy.ru</a>
+          </li>
+          <li class="connect_item">
+            <p class="connect__p">Приезжайте в гости:</p>
+            <a class="connect__link" href="#">ул. Большая Конюшенная, 19/8</a>
+          </li>
+        </ul>
+        <div class="map"></div>
       </section>
     </main>
     <footer class="page-footer">
