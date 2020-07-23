@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="page-photo__body">
+  <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <img
@@ -252,19 +252,25 @@
             height="374"
             alt="ваше фото для редактирования"
           />
-          <label class="form-photo__crop form-photo__crop--active">
-            <input
-              class="form-photo__range form-photo__range--active"
-              type="range"
-              name="crop"
-            />
-          </label>
-          <label class="form-photo__fill">
-            <input class="form-photo__range" type="range" name="fill" />
-          </label>
-          <label class="form-photo__contrast">
-            <input class="form-photo__range" type="range" name="contrast" />
-          </label>
+          <input
+            class="form-photo__range form-photo__range--active"
+            type="range"
+            name="crop"
+            id="crop"
+          />
+          <label
+            class="form-photo__crop form-photo__crop--active"
+            for="crop"
+          ></label>
+          <input class="form-photo__range" type="range" name="fill" id="fill" />
+          <label class="form-photo__fill" for="fill"></label>
+          <input
+            class="form-photo__range"
+            type="range"
+            name="contrast"
+            id="contrast"
+          />
+          <label class="form-photo__contrast" for="contrast"></label>
         </fieldset>
         <fieldset class="form-photo__fildset">
           <button class="form-photo__button btn btn--pink" type="submit">
