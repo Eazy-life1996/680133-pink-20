@@ -1,0 +1,97 @@
+.form__field {
+  border: none;
+  background-color: @white;
+}
+
+.form__field--grey {
+  background-color: @grey;
+}
+
+.form__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__legend {
+  color: @pink;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__label {
+  font-size: 14px;
+  line-height: 30px;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.form__label-check {
+  font-size: 18px;
+  line-height: 30px;
+  color: @darkgrey;
+}
+
+.form__input {
+  border: 2px solid @lightgrey;
+  border-radius: 1px;
+  width: 276px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+  outline: none;
+  &:hover {
+    border: 2px solid @darkgrey;
+    border-radius: 1px;
+  }
+  &:focus {
+    border: 2px solid @pink;
+    border-radius: 1px;
+  }
+}
+
+.form__input[value] {
+  font-size: 18px;
+  line-height: 30px;
+  color: @darkgrey;
+}
+
+.form__comment {
+  border: 2px solid @lightgrey;
+  border-radius: 1px;
+}
+
+.btn--green {
+  border: none;
+  background-color: @green;
+  border: 2px solid @green;
+  border-radius: 1px;
+  width: 274px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @white;
+  cursor: pointer;
+  &:hover {
+    background-color: @green-hover;
+    border: 2px solid @green-hover;
+    border-radius: 1px;
+  }
+  &:active {
+    color: @white-active;
+  }
+}
+
+.form__p-info {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @darkgrey;
+}
+
+.form__star {
+  color: @pink;
+}
