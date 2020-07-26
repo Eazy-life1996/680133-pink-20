@@ -2,47 +2,60 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img
-          src="img/mobile-logo.svg"
-          width="74"
-          height="23"
-          alt="Сайт для приложения Пинк"
-        />
-      </a>
       <nav class="main-nav">
+        <a class="main-nav__logo">
+          <img
+            src="img/logo-pink-white-mobile.svg"
+            width="74"
+            height="23"
+            alt="Сайт для приложения Пинк"
+          />
+        </a>
         <button class="main-nav__toggle js-drop-and-close" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span>Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__items main-nav__items--active">
-              <a>Главная</a>
+            <li class="main-nav__item main-nav__items--active">
+              <a class="main-nav__link">Главная</a>
             </li>
-            <li class="main-nav__items"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__items"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__items"><a href="#">Html academy</a></li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Html academy</a>
+            </li>
           </ul>
         </div>
       </nav>
-    </header>
-
-    <main class="page-main">
-      <h1 class="visually-hidden">Приложение пинк!</h1>
-      <section class="intro--home">
-        <h2 class="intro__title">
+      <section class="page-header__intro page-header__intro--home">
+        <h2 class="page-header__title">
           Взгляните на жизнь<br />
           иначе!
         </h2>
       </section>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение пинк!</h1>
       <section class="download">
         <h2 class="visually-hidden">Скачать приложение пинк</h2>
-        <a class="download__link" href="https://www.apple.com/ru/ios/app-store/"
+        <a
+          class="download__link btn-link"
+          href="https://www.apple.com/ru/ios/app-store/"
           >Скачать приложение</a
         >
         <ul class="download__list">
@@ -52,7 +65,7 @@
               href="https://www.apple.com/ru/ios/app-store/"
             >
               <img
-                src="img/mobile-link.svg"
+                src="img/logo-apple.svg"
                 width="47"
                 height="56"
                 alt="ссылка на эп стор"
@@ -64,7 +77,7 @@
               href="https://play.google.com/store/apps?hl=ru"
             >
               <img
-                src="img/mobile-link.svg"
+                src="img/logo-android.svg"
                 width="43"
                 height="47"
                 alt="ссылка на плэй маркет"
@@ -76,7 +89,7 @@
               href="https://www.microsoft.com/ru-ru/store/apps/windows"
             >
               <img
-                src="img/mobile-link.svg"
+                src="img/logo-microsoft.svg"
                 width="44"
                 height="41"
                 alt="ссылка на магазин майкрасофт"
@@ -87,12 +100,12 @@
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </section>
-      <section class="page-title--home">
+      <section class="page-title page-title--home">
         <h2 class="visually-hidden">Слоган</h2>
         <p class="page-title__description">
           Устали от серости мегаполиса?
         </p>
-        <p class="page-title__description--second">
+        <p class="page-title__description">
           Нам есть, что вам предложить!
         </p>
       </section>
@@ -141,80 +154,109 @@
       </section>
       <section class="rates">
         <h2 class="visually-hidden">Таблицы тарифов</h2>
-        <table class="table">
-          <tr>
-            <th class="table__rate">
-              База 1,99 USD
+        <table class="rates__table">
+          <tr class="rates__tr">
+            <th class="rates__th">
+              <p class="rates__title">База</p>
+              <p class="rates__price">1,99 USD</p>
+            </th>
+            <th class="rates__th">
+              <h3 class="rates__title">Стандарт</h3>
+              <p class="rates__price">3,99 USD</p>
+            </th>
+            <th class="rates__th">
+              <h3 class="rates__title">Анлим</h3>
+              <p class="rates__price">9,99 USD</p>
             </th>
           </tr>
-          <tr class="table__tr">
-            <td class="table__td">Розовый фильтр</td>
-            <td class="table__td">
-              <img class="table_img" src="img/svg" alt="галочка" />
+          <tr class="rates__tr">
+            <th class="rates__th-row">Розовый фильтр</th>
+            <td class="rates__td" data-label="Розовый фильтр">
+              <img
+                class="rates__img"
+                src="img/icon-yes.svg"
+                width="31"
+                height="21"
+                alt="галочка"
+              />
+            </td>
+            <td class="rates__td" data-label="Розовый фильтр">
+              <img
+                class="rates__img"
+                src="img/icon-yes.svg"
+                width="31"
+                height="21"
+                alt="галочка"
+              />
+            </td>
+            <td class="rates__td" data-label="Розовый фильтр">
+              <img
+                class="rates__img"
+                src="img/icon-yes.svg"
+                width="31"
+                height="21"
+                alt="галочка"
+              />
             </td>
           </tr>
-          <tr class="table__tr">
-            <td class="table__td">Смайлики</td>
-            <td class="table__td">
-              <img class="table_img" src="img/svg" alt="крестик" />
+          <tr class="rates__tr">
+            <th class="rates__th-row">Смайлики</th>
+            <td class="rates__td" data-label="Смайлики">
+              <img
+                class="rates__img"
+                src="img/icon-no.svg"
+                width="31"
+                height="21"
+                alt="крестик"
+              />
+            </td>
+            <td class="rates__td" data-label="Смайлики">
+              <img
+                class="rates__img"
+                src="img/icon-yes.svg"
+                width="31"
+                height="21"
+                alt="галочка"
+              />
+            </td>
+            <td class="rates__td" data-label="Смайлики">
+              <img
+                class="rates__img"
+                src="img/icon-yes.svg"
+                width="31"
+                height="21"
+                alt="галочка"
+              />
             </td>
           </tr>
-          <tr class="table__tr">
-            <td class="table__td">Комментарии</td>
-            <td class="table__td">
-              <img class="table_img" src="img/svg" alt="крестик" />
+          <tr class="rates__tr">
+            <th class="rates__th-row">Комментарии</th>
+            <td class="rates__td" data-label="Комментарии">
+              <img
+                class="rates__img"
+                src="img/icon-no.svg"
+                width="31"
+                height="21"
+                alt="крестик"
+              />
             </td>
-          </tr>
-        </table>
-
-        <table class="table">
-          <tr>
-            <th class="table__rate">
-              Стандарт 3,99 USD <img src="img/svg" alt="Хит продаж" />
-            </th>
-          </tr>
-          <tr class="table__tr">
-            <td class="table__td">Розовый фильтр</td>
-            <td class="table__td">
-              <img class="table_img" src="img/svg" alt="галочка" />
+            <td class="rates__td" data-label="Комментарии">
+              <img
+                class="rates__img"
+                src="img/icon-no.svg"
+                width="31"
+                height="21"
+                alt="крестик"
+              />
             </td>
-          </tr>
-          <tr class="table__tr">
-            <td class="table__td">Смайлики</td>
-            <td class="table__td">
-              <img class="table_img" src="img/svg" alt="галочка" />
-            </td>
-          </tr>
-          <tr class="table__tr">
-            <td class="table__td">Комментарии</td>
-            <td class="table__td">
-              <img class="table_img" src="img/svg" alt="крестик" />
-            </td>
-          </tr>
-        </table>
-
-        <table class="table">
-          <tr>
-            <th class="table__rate">
-              Анлим 9,99 USD
-            </th>
-          </tr>
-          <tr class="table__tr">
-            <td class="table__td">Розовый фильтр</td>
-            <td class="table__td">
-              <img class="table_img" src="img/svg" alt="галочка" />
-            </td>
-          </tr>
-          <tr class="table__tr">
-            <td class="table__td">Смайлики</td>
-            <td class="table__td">
-              <img class="table_img" src="img/svg" alt="галочка" />
-            </td>
-          </tr>
-          <tr class="table__tr">
-            <td class="table__td">Комментарии</td>
-            <td class="table__td">
-              <img class="table_img" src="img/svg" alt="галочка" />
+            <td class="rates__td" data-label="Комментарии">
+              <img
+                class="rates__img"
+                src="img/icon-yes.svg"
+                width="31"
+                height="21"
+                alt="галочка"
+              />
             </td>
           </tr>
         </table>
@@ -243,28 +285,53 @@
             <a class="connect__link" href="#">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
-        <div class="map"></div>
+        <div class="map">
+          <img
+            src="img/bg-map-mobile@1x.png"
+            width="320"
+            alt="Место на карте"
+          />
+        </div>
       </section>
     </main>
     <footer class="page-footer">
       <img
         class="page-footer__logo"
-        src="img"
+        src="img/logo-pink-blue-mobile.svg"
         width="145"
         height="45"
         alt="Логотип пинк"
       />
-      <ul class="page-footer__social">
-        <li class="page-footer__icon">
-          <a><img src="img/icon.svg" width="48" height="48" alt="twiter" /></a>
-        </li>
+      <ul class="page-footer__list">
         <li class="page-footer__icon">
           <a
-            ><img src="img/icon.svg" width="48" height="48" alt="facebook"
+            ><img
+              class="page-footer__twitter"
+              src="img/twitter.svg"
+              width="48"
+              height="48"
+              alt="twiter"
           /></a>
         </li>
         <li class="page-footer__icon">
-          <a><img src="img/icon.svg" width="48" height="48" alt="youtube" /></a>
+          <a
+            ><img
+              class="page-footer__facebook"
+              src="img/facebook.svg"
+              width="48"
+              height="48"
+              alt="facebook"
+          /></a>
+        </li>
+        <li class="page-footer__icon">
+          <a
+            ><img
+              class="page-footer__youtube"
+              src="img/youtube.svg"
+              width="48"
+              height="48"
+              alt="youtube"
+          /></a>
         </li>
       </ul>
       <div class="page-footer__developer">
@@ -272,7 +339,7 @@
         <a href="https://htmlacademy.ru/intensive/adaptive">
           <img
             class="page-footer__logo-developer"
-            src="img/developer.svg"
+            src="img/logo-htmlacademy.svg"
             width="27"
             height="34"
             alt="Лого академии"
