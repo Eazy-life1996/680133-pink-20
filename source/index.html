@@ -11,22 +11,42 @@
     />
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--home">
       <nav class="main-nav">
-        <a class="main-nav__logo">
-          <img
-            src="img/logo-pink-white-mobile.svg"
-            width="74"
-            height="23"
-            alt="Сайт для приложения Пинк"
-          />
-        </a>
-        <button class="main-nav__toggle js-drop-and-close" type="button">
-          <span>Открыть меню</span>
-        </button>
+        <div class="main-nav__head">
+          <a class="main-nav__logo">
+            <img
+              class="main-nav__img"
+              src="img/logo-pink-white-mobile.svg"
+              width="74"
+              height="23"
+              alt="Сайт для приложения Пинк"
+            />
+            <img
+              class="main-nav__img--table"
+              src="img/logo-pink-white-tablet.svg"
+              width="145"
+              height="40"
+              alt="Сайт для приложения Пинк"
+            />
+          </a>
+          <button class="main-nav__toggle js-drop-and-close" type="button">
+            <img src="img/icon-menu-cross.svg" alt="" />
+          </button>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__items--active">
+            <li class="main-nav__item--logo">
+              <a>
+                <img
+                  class="main-nav__img--desk"
+                  src="img/logo-pink-white-desktop.svg"
+                  width="145"
+                  height="40"
+                  alt="Сайт для приложения Пинк"
+              /></a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
@@ -42,15 +62,11 @@
         </div>
       </nav>
       <section class="page-header__intro page-header__intro--home">
-        <h2 class="page-header__title">
-          Взгляните на жизнь<br />
+        <h2 class="page-header__title page-header__title--home">
+          Взгляните<br /> на жизнь
           иначе!
         </h2>
       </section>
-    </header>
-
-    <main class="page-main">
-      <h1 class="visually-hidden">Приложение пинк!</h1>
       <section class="download">
         <h2 class="visually-hidden">Скачать приложение пинк</h2>
         <a
@@ -97,9 +113,14 @@
           </li>
         </ul>
         <p class="download__description">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          Доступно для iPhone, iPad, Android,<br />
+          Windows Phone, OS X, Windows 8
         </p>
       </section>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Приложение пинк!</h1>
       <section class="page-title page-title--home">
         <h2 class="visually-hidden">Слоган</h2>
         <p class="page-title__description">
@@ -134,12 +155,7 @@
             </p>
           </li>
         </ul>
-        <img
-          src="img/mobile.jpg"
-          width="157"
-          height="320"
-          alt="Телефон с приложением пинк"
-        />
+        <div class="advantages__img"></div>
       </section>
       <section class="comment">
         <h3 class="comment__autor">Николай Петров</h3>

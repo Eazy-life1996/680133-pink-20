@@ -11,25 +11,45 @@
     />
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--home">
       <nav class="main-nav">
-        <a class="main-nav__logo">
-          <img
-            src="img/logo-pink-white-mobile.svg"
-            width="74"
-            height="23"
-            alt="Сайт для приложения Пинк"
-          />
-        </a>
-        <button class="main-nav__toggle js-drop-and-close" type="button">
-          <span>Открыть меню</span>
-        </button>
+        <div class="main-nav__head">
+          <a class="main-nav__logo">
+            <img
+              class="main-nav__img"
+              src="img/logo-pink-white-mobile.svg"
+              width="74"
+              height="23"
+              alt="Сайт для приложения Пинк"
+            />
+            <img
+              class="main-nav__img--table"
+              src="img/logo-pink-white-tablet.svg"
+              width="145"
+              height="40"
+              alt="Сайт для приложения Пинк"
+            />
+          </a>
+          <button class="main-nav__toggle js-drop-and-close" type="button">
+            <img src="img/icon-menu-cross.svg" alt="" />
+          </button>
+        </div>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
+            <li class="main-nav__item--logo">
+              <a>
+                <img
+                  class="main-nav__img--desk"
+                  src="img/logo-pink-white-desktop.svg"
+                  width="145"
+                  height="40"
+                  alt="Сайт для приложения Пинк"
+              /></a>
+            </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item main-nav__items--active">
+            <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link">Фотографии</a>
             </li>
             <li class="main-nav__item">
@@ -64,6 +84,7 @@
             <div class="photo__best-today">Панорама дня</div>
             <a>
               <img
+                class="photo__img photo__img--big"
                 src="img/panorama-mobile@1x.jpg"
                 width="320"
                 height="137"
@@ -93,6 +114,7 @@
           <li class="photo__item">
             <a>
               <img
+                class="photo__img"
                 src="img/photo-car-mobile@1x.jpg"
                 width="280"
                 height="180"
@@ -121,6 +143,7 @@
           <li class="photo__item">
             <a>
               <img
+                class="photo__img"
                 src="img/photo-drumset-mobile@1x.jpg"
                 width="280"
                 height="180"
@@ -149,6 +172,7 @@
           <li class="photo__item">
             <a>
               <img
+                class="photo__img"
                 src="img/photo-window-mobile@1x.jpg"
                 width="280"
                 height="180"
@@ -177,6 +201,7 @@
           <li class="photo__item">
             <a>
               <img
+                class="photo__img"
                 src="img/photo-fair-mobile@1x.jpg"
                 width="280"
                 height="180"
@@ -204,6 +229,7 @@
           </li>
           <li class="photo__item">
             <img
+              class="photo__img"
               src="img/photo-pov-mobile@1x.jpg"
               width="280"
               height="180"
@@ -231,6 +257,7 @@
           <li class="photo__item">
             <a>
               <img
+                class="photo__img"
                 src="img/photo-wing-mobile@1x.jpg"
                 width="280"
                 height="180"
@@ -257,13 +284,13 @@
             </div>
           </li>
         </ul>
+        <section class="photo-description__description">
+          <h2 class="visually-hidden">выложите свое фото</h2>
+          <p class="photo-description__p">
+            Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!
+          </p>
       </section>
-      <section class="description-form">
-        <h2 class="visually-hidden">выложите свое фото</h2>
-        <p class="description-form__description">
-          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
-        </p>
-      </section>
+
       <form
         class="form-photo"
         action="https://echo.htmlacademy.ru"
@@ -276,6 +303,8 @@
             height="374"
             alt="ваше фото для редактирования"
           />
+        </fieldset>
+        <fieldset class="form-photo__fieldset">
           <input
             class="form-photo__range form-photo__range--active"
             type="range"

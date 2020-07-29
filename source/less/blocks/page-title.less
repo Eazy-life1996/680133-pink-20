@@ -1,6 +1,10 @@
 .page-title {
   background-color: @white;
   color: @darkgrey;
+  width: 320px;
+  padding-top: 26px;
+  padding-bottom: 25px;
+  padding-left: 20px;
 }
 
 .page-title--home .page-title__description {
@@ -11,4 +15,40 @@
 .page-title__description {
   font-size: 14px;
   line-height: 30px;
+  width: 280px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-title {
+    width: 660px;
+  }
+
+  .page-title__description {
+    width: 520px;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 auto;
+  }
+  .page-title--home .page-title__description {
+    width: 588px;
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-title {
+    width: 1200px;
+  }
+
+  .page-title__description {
+    width: 572px;
+    margin: 0 auto;
+  }
+  .page-title--home .page-title__description {
+    width: 780px;
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
