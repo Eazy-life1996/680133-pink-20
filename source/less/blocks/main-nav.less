@@ -1,5 +1,10 @@
 .main-nav {
   width: 320px;
+  position: absolute;
+}
+
+.main-nav--open {
+  position: static;
 }
 
 .main-nav__toggle {
@@ -14,8 +19,12 @@
   background-color: @darkgrey;
   padding: 0;
   margin: 0;
-
+  display: none;
   list-style: none;
+}
+
+.main-nav--open .main-nav__list {
+  // display: block;
 }
 
 .main-nav__item {
@@ -31,9 +40,13 @@
 }
 
 .main-nav__head {
-  background-color: @darkgrey;
+  background-color: fade(black, 30%);
   display: flex;
   min-height: 69px;
+}
+
+.main-nav--open .main-nav__head{
+  background-color: @darkgrey;
 }
 
 .main-nav__logo {
