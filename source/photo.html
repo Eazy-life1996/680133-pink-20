@@ -12,8 +12,8 @@
   </head>
   <body>
     <header class="page-header page-header--home">
-      <nav class="main-nav main-nav--close main-nav--nojs">
-        <div class="main-nav__head">
+      <nav class="main-nav main-nav--close main-nav--nojs container">
+        <div class="main-nav__head container">
           <a class="main-nav__logo"> </a>
           <button class="main-nav__toggle js-drop-and-close" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -39,14 +39,14 @@
           </li>
         </ul>
       </nav>
-      <section class="intro">
+      <section class="intro container">
         <h2 class="intro__title">Фотографии <br> пользователей</h2>
       </section>
     </header>
 
     <main class="page-main-photo">
       <h1 class="visually-hidden">лучшие фотографии пользователей</h1>
-      <section class="page-title">
+      <section class="page-title container">
         <h2 class="visually-hidden">
           Смотрите фотографии других пользователей
         </h2>
@@ -55,7 +55,7 @@
           не хватает ваших?
         </p>
       </section>
-      <section class="photo">
+      <section class="photo container">
         <h2 class="visually-hidden">перечень фотографий</h2>
         <ul class="photo__list">
           <li class="photo__item">
@@ -270,12 +270,13 @@
       </section>
 
       <form
-        class="form-photo"
+        class="form-photo container"
         action="https://echo.htmlacademy.ru"
         method="POST"
       >
         <fieldset class="form-photo__fieldset">
           <img
+            class="form-photo__img"
             src="img/photo-road-mobile@1x.jpg"
             width="280"
             height="374"
@@ -314,7 +315,7 @@
       </form>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <img
         class="page-footer__logo"
         src="img/logo-pink-blue-mobile.svg"

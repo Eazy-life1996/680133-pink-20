@@ -12,8 +12,8 @@
   </head>
   <body>
     <header class="page-header page-header--home">
-      <nav class="main-nav main-nav--home main-nav--open main-nav--nojs">
-        <div class="main-nav__head">
+      <nav class="main-nav main-nav main-nav--close main-nav--nojs container">
+        <div class="main-nav__head container">
           <a class="main-nav__logo"></a>
           <button class="main-nav__toggle js-drop-and-close" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -44,7 +44,7 @@
           </li>
         </ul>
       </nav>
-      <section class="intro intro--home">
+      <section class="intro intro--home container">
         <h2 class="intro__title intro__title--home">
           Взгляните на жизнь <br />
           иначе!
@@ -104,7 +104,7 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Приложение пинк!</h1>
-      <section class="page-title page-title--home">
+      <section class="page-title page-title--home container">
         <h2 class="visually-hidden">Слоган</h2>
         <p class="page-title__description">
           Устали от серости мегаполиса?
@@ -113,7 +113,7 @@
           Нам есть, что вам предложить!
         </p>
       </section>
-      <section class="advantages">
+      <section class="advantages container">
         <h2 class="visually-hidden">Перечень преймуществ</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -140,7 +140,7 @@
         </ul>
         <div class="advantages__img"></div>
       </section>
-      <section class="comment">
+      <section class="comment container">
         <h3 class="comment__autor">Николай Петров</h3>
         <p class="comment__text">
           «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
@@ -151,7 +151,7 @@
         <div class="comment__toggle"></div>
         <div class="comment__toggle"></div>
       </section>
-      <section class="rates">
+      <section class="rates container">
         <h2 class="visually-hidden">Таблицы тарифов</h2>
         <table class="rates__table">
           <tr class="rates__tr">
@@ -263,7 +263,7 @@
         <div class="rates__toggle rates__toggle--active"></div>
         <div class="rates__toggle"></div>
       </section>
-      <section class="connect">
+      <section class="connect container">
         <h2 class="connect__title">
           Остались вопросы?<br />
           Свяжитесь с нами!
@@ -284,8 +284,9 @@
             <a class="connect__link" href="#">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
-        <div class="map">
+        <div class="map container">
           <img
+            class="map__img"
             src="img/bg-map-mobile@1x.png"
             width="320"
             alt="Место на карте"
@@ -293,7 +294,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <img
         class="page-footer__logo"
         src="img/logo-pink-blue-mobile.svg"
