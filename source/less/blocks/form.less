@@ -5,7 +5,8 @@
   padding-left: 0;
 }
 
-.form__field--grey {
+.form__field--aplication,
+.form__field--achievements {
   background-color: @grey;
 }
 
@@ -83,7 +84,7 @@
     border-radius: 1px;
   }
   &:active {
-    color: @white-active;
+    color: fade(@white, 30%);
   }
 }
 
@@ -96,4 +97,67 @@
 
 .form__star {
   color: @pink;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  .form__field {
+    background-color: @white;
+  }
+
+  .form__field--aplication {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .form__field--contacts {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .form {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .form__field--user-name {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .form__field--aplication {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .form__field--contacts {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .form__field--achievements {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .form__field--reviews {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
