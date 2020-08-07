@@ -1,9 +1,12 @@
 .form-photo {
   background-color: @grey;
+  margin-left: -20px;
 }
 
 .form-photo__fieldset {
   border: none;
+  width: 280px;
+  margin-left: -10px;
 }
 
 .form-photo__button {
@@ -22,6 +25,7 @@
 .btn--pink {
   border: 3px solid @pink;
   color: @pink;
+  margin-bottom: 12px;
   &:hover,
   &:focus {
     background-color: @pink;
@@ -44,5 +48,59 @@
     border: 3px solid @darkgrey-active;
     background-color: @darkgrey-active-2;
     color: @white-active;
+  }
+}
+
+.form-photo__img {
+}
+
+.form-photo__range {
+  display: none;
+}
+
+.form-photo__range--active {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .form-photo {
+    padding-top: 57px;
+    padding-bottom: 54px;
+    width: 660px;
+    display: grid;
+    grid-template-columns: 300px 275px;
+    grid-template-rows: auto auto;
+    column-gap: 45px;
+    row-gap: 67px;
+  }
+
+  .form-photo__fieldset:first-child {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .form-photo__range {
+    width: 253px;
+    display: block;
+  }
+
+  .form-photo__button {
+    width: 260px;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .form-photo {
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 80px;
+  }
+  .form-photo__range {
+    width: 288px;
+    display: block;
+  }
+
+  .form-photo__button {
+    width: 183px;
   }
 }

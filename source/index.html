@@ -11,96 +11,100 @@
     />
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <a class="main-nav__logo">
-          <img
-            src="img/logo-pink-white-mobile.svg"
-            width="74"
-            height="23"
-            alt="Сайт для приложения Пинк"
-          />
-        </a>
-        <button class="main-nav__toggle js-drop-and-close" type="button">
-          <span>Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__items--active">
-              <a class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Html academy</a>
-            </li>
-          </ul>
+    <header class="page-header page-header--home">
+      <nav class="main-nav main-nav main-nav--close main-nav--nojs container">
+        <div class="main-nav__head container">
+          <a class="main-nav__logo"></a>
+          <button class="main-nav__toggle js-drop-and-close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--desktop">
+              <img
+                src="img/logo-pink-white-desktop.svg"
+                width="147"
+                height="40"
+                alt="Логотип Пинк"
+              />
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Html academy</a>
+          </li>
+        </ul>
       </nav>
-      <section class="page-header__intro page-header__intro--home">
-        <h2 class="page-header__title">
-          Взгляните на жизнь<br />
+      <section class="intro intro--home container">
+        <h2 class="intro__title intro__title--home">
+          Взгляните на жизнь <br />
           иначе!
         </h2>
+        <div class="intro-download">
+          <h2 class="visually-hidden">Скачать приложение пинк</h2>
+          <a
+            class="intro-download__link btn-link"
+            href="https://www.apple.com/ru/ios/app-store/"
+            >Скачать приложение</a
+          >
+          <ul class="intro-download__list">
+            <li class="intro-download__item">
+              <a
+                class="intro-download__link"
+                href="https://www.apple.com/ru/ios/app-store/"
+              >
+                <img
+                  src="img/logo-apple.svg"
+                  width="47"
+                  height="56"
+                  alt="ссылка на эп стор"
+              /></a>
+            </li>
+            <li class="intro-download__item">
+              <a
+                class="intro-download__link"
+                href="https://play.google.com/store/apps?hl=ru"
+              >
+                <img
+                  src="img/logo-android.svg"
+                  width="43"
+                  height="47"
+                  alt="ссылка на плэй маркет"
+              /></a>
+            </li>
+            <li class="intro-download__item">
+              <a
+                class="intro-download__link"
+                href="https://www.microsoft.com/ru-ru/store/apps/windows"
+              >
+                <img
+                  src="img/logo-microsoft.svg"
+                  width="44"
+                  height="41"
+                  alt="ссылка на магазин майкрасофт"
+              /></a>
+            </li>
+          </ul>
+          <p class="intro-download__description">
+            Доступно для iPhone, iPad, Android,<br />
+            Windows Phone, OS X, Windows 8
+          </p>
+        </div>
       </section>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Приложение пинк!</h1>
-      <section class="download">
-        <h2 class="visually-hidden">Скачать приложение пинк</h2>
-        <a
-          class="download__link btn-link"
-          href="https://www.apple.com/ru/ios/app-store/"
-          >Скачать приложение</a
-        >
-        <ul class="download__list">
-          <li class="download__item">
-            <a
-              class="download__link"
-              href="https://www.apple.com/ru/ios/app-store/"
-            >
-              <img
-                src="img/logo-apple.svg"
-                width="47"
-                height="56"
-                alt="ссылка на эп стор"
-            /></a>
-          </li>
-          <li class="download__item">
-            <a
-              class="download__link"
-              href="https://play.google.com/store/apps?hl=ru"
-            >
-              <img
-                src="img/logo-android.svg"
-                width="43"
-                height="47"
-                alt="ссылка на плэй маркет"
-            /></a>
-          </li>
-          <li class="download__item">
-            <a
-              class="download__link"
-              href="https://www.microsoft.com/ru-ru/store/apps/windows"
-            >
-              <img
-                src="img/logo-microsoft.svg"
-                width="44"
-                height="41"
-                alt="ссылка на магазин майкрасофт"
-            /></a>
-          </li>
-        </ul>
-        <p class="download__description">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </section>
-      <section class="page-title page-title--home">
+      <section class="page-title page-title--home container">
         <h2 class="visually-hidden">Слоган</h2>
         <p class="page-title__description">
           Устали от серости мегаполиса?
@@ -109,7 +113,7 @@
           Нам есть, что вам предложить!
         </p>
       </section>
-      <section class="advantages">
+      <section class="advantages container">
         <h2 class="visually-hidden">Перечень преймуществ</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -134,14 +138,20 @@
             </p>
           </li>
         </ul>
-        <img
-          src="img/mobile.jpg"
-          width="157"
-          height="320"
-          alt="Телефон с приложением пинк"
-        />
+        <div class="advantages__img"></div>
       </section>
-      <section class="comment">
+      <section class="effect container">
+        <img class="effect__img" width="238" height="276" src="img/icon-timer.svg" alt="изображения часов">
+        <div class="effect__block">
+          <h2 class="effect__title">Эффект <br> на 24 часа!</h2>
+          <p class="effect__description">
+            Британские ученые провели исследования и доказали, что положительный
+            эффект от использования приложения длится <br> целые сутки!
+          </p>
+          <a class="effect__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
+      <section class="comment container">
         <h3 class="comment__autor">Николай Петров</h3>
         <p class="comment__text">
           «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
@@ -152,20 +162,21 @@
         <div class="comment__toggle"></div>
         <div class="comment__toggle"></div>
       </section>
-      <section class="rates">
+      <section class="rates container">
         <h2 class="visually-hidden">Таблицы тарифов</h2>
         <table class="rates__table">
           <tr class="rates__tr">
+            <th class="rates__th--none"></th>
             <th class="rates__th">
               <p class="rates__title">База</p>
               <p class="rates__price">1,99 USD</p>
             </th>
             <th class="rates__th">
-              <h3 class="rates__title">Стандарт</h3>
+              <p class="rates__title">Стандарт</p>
               <p class="rates__price">3,99 USD</p>
             </th>
             <th class="rates__th">
-              <h3 class="rates__title">Анлим</h3>
+              <p class="rates__title">Анлим</p>
               <p class="rates__price">9,99 USD</p>
             </th>
           </tr>
@@ -264,7 +275,7 @@
         <div class="rates__toggle rates__toggle--active"></div>
         <div class="rates__toggle"></div>
       </section>
-      <section class="connect">
+      <section class="connect container">
         <h2 class="connect__title">
           Остались вопросы?<br />
           Свяжитесь с нами!
@@ -285,8 +296,9 @@
             <a class="connect__link" href="#">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
-        <div class="map">
+        <div class="map container">
           <img
+            class="map__img"
             src="img/bg-map-mobile@1x.png"
             width="320"
             alt="Место на карте"
@@ -294,7 +306,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <img
         class="page-footer__logo"
         src="img/logo-pink-blue-mobile.svg"
@@ -347,5 +359,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

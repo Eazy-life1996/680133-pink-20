@@ -11,44 +11,50 @@
     />
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <a class="main-nav__logo">
-          <img
-            src="img/logo-pink-white-mobile.svg"
-            width="74"
-            height="23"
-            alt="Сайт для приложения Пинк"
-          />
-        </a>
-        <button class="main-nav__toggle js-drop-and-close" type="button">
-          <span>Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item main-nav__items--active">
-              <a class="main-nav__link">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Html academy</a>
-            </li>
-          </ul>
+    <header class="page-header page-header--home">
+      <nav class="main-nav main-nav--close main-nav--nojs container">
+        <div class="main-nav__head container">
+          <a class="main-nav__logo"> </a>
+          <button class="main-nav__toggle js-drop-and-close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--desktop">
+            <a class="main-nav__link main-nav__link--desktop">
+              <img
+                src="img/logo-pink-white-desktop.svg"
+                width="147"
+                height="40"
+                alt="Логотип Пинк"
+              />
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Html academy</a>
+          </li>
+        </ul>
       </nav>
-      <section class="page-header__intro">
-        <h2 class="page-header__title">Фотографии пользователей</h2>
+      <section class="intro container">
+        <h2 class="intro__title">
+          Фотографии <br />
+          пользователей
+        </h2>
       </section>
     </header>
 
     <main class="page-main-photo">
       <h1 class="visually-hidden">лучшие фотографии пользователей</h1>
-      <section class="page-title">
+      <section class="page-title container">
         <h2 class="visually-hidden">
           Смотрите фотографии других пользователей
         </h2>
@@ -57,13 +63,14 @@
           не хватает ваших?
         </p>
       </section>
-      <section class="photo">
+      <section class="photo container">
         <h2 class="visually-hidden">перечень фотографий</h2>
         <ul class="photo__list">
           <li class="photo__item">
             <div class="photo__best-today">Панорама дня</div>
             <a>
               <img
+                class="photo__img photo__img--big"
                 src="img/panorama-mobile@1x.jpg"
                 width="320"
                 height="137"
@@ -93,6 +100,7 @@
           <li class="photo__item">
             <a>
               <img
+                class="photo__img"
                 src="img/photo-car-mobile@1x.jpg"
                 width="280"
                 height="180"
@@ -121,6 +129,7 @@
           <li class="photo__item">
             <a>
               <img
+                class="photo__img"
                 src="img/photo-drumset-mobile@1x.jpg"
                 width="280"
                 height="180"
@@ -149,6 +158,7 @@
           <li class="photo__item">
             <a>
               <img
+                class="photo__img"
                 src="img/photo-window-mobile@1x.jpg"
                 width="280"
                 height="180"
@@ -177,6 +187,7 @@
           <li class="photo__item">
             <a>
               <img
+                class="photo__img"
                 src="img/photo-fair-mobile@1x.jpg"
                 width="280"
                 height="180"
@@ -204,6 +215,7 @@
           </li>
           <li class="photo__item">
             <img
+              class="photo__img"
               src="img/photo-pov-mobile@1x.jpg"
               width="280"
               height="180"
@@ -231,6 +243,7 @@
           <li class="photo__item">
             <a>
               <img
+                class="photo__img"
                 src="img/photo-wing-mobile@1x.jpg"
                 width="280"
                 height="180"
@@ -258,24 +271,29 @@
           </li>
         </ul>
       </section>
-      <section class="description-form">
+      <section class="photo-description__description">
         <h2 class="visually-hidden">выложите свое фото</h2>
-        <p class="description-form__description">
-          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        <p class="photo-description__p">
+          Затмите их всех! <br />
+          Выкладывайте все, что накопилось в телефоне!
         </p>
       </section>
+
       <form
-        class="form-photo"
+        class="form-photo container"
         action="https://echo.htmlacademy.ru"
         method="POST"
       >
         <fieldset class="form-photo__fieldset">
           <img
+            class="form-photo__img"
             src="img/photo-road-mobile@1x.jpg"
             width="280"
             height="374"
             alt="ваше фото для редактирования"
           />
+        </fieldset>
+        <fieldset class="form-photo__fieldset">
           <input
             class="form-photo__range form-photo__range--active"
             type="range"
@@ -307,7 +325,7 @@
       </form>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <img
         class="page-footer__logo"
         src="img/logo-pink-blue-mobile.svg"
@@ -360,5 +378,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>
