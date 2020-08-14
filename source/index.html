@@ -13,23 +13,25 @@
   <body>
     <header class="page-header page-header--home">
       <nav class="main-nav main-nav main-nav--close main-nav--nojs container">
-        <div class="main-nav__head container">
-          <a class="main-nav__logo"></a>
+        <div class="main-nav__head">
+          <a class="main-nav__logo">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/logo-pink-white-desktop.svg"
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="img/logo-pink-white-tablet.svg"
+              />
+              <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" />
+            </picture>
+          </a>
           <button class="main-nav__toggle js-drop-and-close" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--desktop">
-              <img
-                src="img/logo-pink-white-desktop.svg"
-                width="147"
-                height="40"
-                alt="Логотип Пинк"
-              />
-            </a>
-          </li>
           <li class="main-nav__item main-nav__item--active">
             <a class="main-nav__link">Главная</a>
           </li>
@@ -141,139 +143,170 @@
         <div class="advantages__img"></div>
       </section>
       <section class="effect container">
-        <img class="effect__img" width="238" height="276" src="img/icon-timer.svg" alt="изображения часов">
+        <img
+          class="effect__img"
+          width="238"
+          height="276"
+          src="img/icon-timer.svg"
+          alt="изображения часов"
+        />
         <div class="effect__block">
-          <h2 class="effect__title">Эффект <br> на 24 часа!</h2>
+          <h2 class="effect__title">
+            Эффект <br />
+            на 24 часа!
+          </h2>
           <p class="effect__description">
             Британские ученые провели исследования и доказали, что положительный
-            эффект от использования приложения длится <br> целые сутки!
+            эффект от использования приложения длится <br />
+            целые сутки!
           </p>
           <a class="effect__link" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
       <section class="comment container">
-        <h3 class="comment__autor">Николай Петров</h3>
-        <p class="comment__text">
-          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-          привычные серые вещи! А еще я познакомился со своей будущей женой в
-          комментариях к выложенной фотографии!»
-        </p>
-        <div class="comment__toggle comment__toggle--active"></div>
-        <div class="comment__toggle"></div>
-        <div class="comment__toggle"></div>
+        <ul class="comment__list">
+          <li class="comment__item">
+            <h3 class="comment__autor">Николай Петров</h3>
+            <p class="comment__text">
+              «Это приложение перевернуло мой мир и позволило по-новому
+              взглянуть на привычные серые вещи! А еще я познакомился со своей
+              будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </li>
+        </ul>
+        <div class="comment__buttons">
+          <button
+            class="comment__toggle toggle comment__toggle--active"
+          ></button>
+          <button class="comment__toggle toggle"></button>
+          <button class="comment__toggle toggle"></button>
+        </div>
       </section>
       <section class="rates container">
         <h2 class="visually-hidden">Таблицы тарифов</h2>
-        <table class="rates__table">
-          <tr class="rates__tr">
-            <th class="rates__th--none"></th>
-            <th class="rates__th">
-              <p class="rates__title">База</p>
-              <p class="rates__price">1,99 USD</p>
-            </th>
-            <th class="rates__th">
-              <p class="rates__title">Стандарт</p>
-              <p class="rates__price">3,99 USD</p>
-            </th>
-            <th class="rates__th">
-              <p class="rates__title">Анлим</p>
-              <p class="rates__price">9,99 USD</p>
-            </th>
-          </tr>
-          <tr class="rates__tr">
-            <th class="rates__th-row">Розовый фильтр</th>
-            <td class="rates__td" data-label="Розовый фильтр">
-              <img
-                class="rates__img"
-                src="img/icon-yes.svg"
-                width="31"
-                height="21"
-                alt="галочка"
-              />
-            </td>
-            <td class="rates__td" data-label="Розовый фильтр">
-              <img
-                class="rates__img"
-                src="img/icon-yes.svg"
-                width="31"
-                height="21"
-                alt="галочка"
-              />
-            </td>
-            <td class="rates__td" data-label="Розовый фильтр">
-              <img
-                class="rates__img"
-                src="img/icon-yes.svg"
-                width="31"
-                height="21"
-                alt="галочка"
-              />
-            </td>
-          </tr>
-          <tr class="rates__tr">
-            <th class="rates__th-row">Смайлики</th>
-            <td class="rates__td" data-label="Смайлики">
-              <img
-                class="rates__img"
-                src="img/icon-no.svg"
-                width="31"
-                height="21"
-                alt="крестик"
-              />
-            </td>
-            <td class="rates__td" data-label="Смайлики">
-              <img
-                class="rates__img"
-                src="img/icon-yes.svg"
-                width="31"
-                height="21"
-                alt="галочка"
-              />
-            </td>
-            <td class="rates__td" data-label="Смайлики">
-              <img
-                class="rates__img"
-                src="img/icon-yes.svg"
-                width="31"
-                height="21"
-                alt="галочка"
-              />
-            </td>
-          </tr>
-          <tr class="rates__tr">
-            <th class="rates__th-row">Комментарии</th>
-            <td class="rates__td" data-label="Комментарии">
-              <img
-                class="rates__img"
-                src="img/icon-no.svg"
-                width="31"
-                height="21"
-                alt="крестик"
-              />
-            </td>
-            <td class="rates__td" data-label="Комментарии">
-              <img
-                class="rates__img"
-                src="img/icon-no.svg"
-                width="31"
-                height="21"
-                alt="крестик"
-              />
-            </td>
-            <td class="rates__td" data-label="Комментарии">
-              <img
-                class="rates__img"
-                src="img/icon-yes.svg"
-                width="31"
-                height="21"
-                alt="галочка"
-              />
-            </td>
-          </tr>
-        </table>
-        <div class="rates__toggle"></div>
-        <div class="rates__toggle rates__toggle--active"></div>
-        <div class="rates__toggle"></div>
+        <input type="radio" id="radio-1" class="visually-hidden" />
+        <input type="radio" id="radio-2" class="visually-hidden" />
+        <input type="radio" id="radio-3" class="visually-hidden" />
+        <div class="rates__slider">
+          <table class="rates__table">
+            <tr class="rates__tr">
+              <th class="rates__th--none"></th>
+              <th class="rates__th">
+                <p class="rates__title">База</p>
+                <p class="rates__price">1,99 USD</p>
+              </th>
+              <th class="rates__th">
+                <p class="rates__title">Стандарт</p>
+                <p class="rates__price">3,99 USD</p>
+              </th>
+              <th class="rates__th">
+                <p class="rates__title">Анлим</p>
+                <p class="rates__price">9,99 USD</p>
+              </th>
+            </tr>
+            <tr class="rates__tr">
+              <th class="rates__th-row">Розовый фильтр</th>
+              <td class="rates__td" data-label="Розовый фильтр">
+                <img
+                  class="rates__img"
+                  src="img/icon-yes.svg"
+                  width="31"
+                  height="21"
+                  alt="галочка"
+                />
+              </td>
+              <td class="rates__td" data-label="Розовый фильтр">
+                <img
+                  class="rates__img"
+                  src="img/icon-yes.svg"
+                  width="31"
+                  height="21"
+                  alt="галочка"
+                />
+              </td>
+              <td class="rates__td" data-label="Розовый фильтр">
+                <img
+                  class="rates__img"
+                  src="img/icon-yes.svg"
+                  width="31"
+                  height="21"
+                  alt="галочка"
+                />
+              </td>
+            </tr>
+            <tr class="rates__tr">
+              <th class="rates__th-row">Смайлики</th>
+              <td class="rates__td" data-label="Смайлики">
+                <img
+                  class="rates__img"
+                  src="img/icon-no.svg"
+                  width="31"
+                  height="21"
+                  alt="крестик"
+                />
+              </td>
+              <td class="rates__td" data-label="Смайлики">
+                <img
+                  class="rates__img"
+                  src="img/icon-yes.svg"
+                  width="31"
+                  height="21"
+                  alt="галочка"
+                />
+              </td>
+              <td class="rates__td" data-label="Смайлики">
+                <img
+                  class="rates__img"
+                  src="img/icon-yes.svg"
+                  width="31"
+                  height="21"
+                  alt="галочка"
+                />
+              </td>
+            </tr>
+            <tr class="rates__tr">
+              <th class="rates__th-row">Комментарии</th>
+              <td class="rates__td" data-label="Комментарии">
+                <img
+                  class="rates__img"
+                  src="img/icon-no.svg"
+                  width="31"
+                  height="21"
+                  alt="крестик"
+                />
+              </td>
+              <td class="rates__td" data-label="Комментарии">
+                <img
+                  class="rates__img"
+                  src="img/icon-no.svg"
+                  width="31"
+                  height="21"
+                  alt="крестик"
+                />
+              </td>
+              <td class="rates__td" data-label="Комментарии">
+                <img
+                  class="rates__img"
+                  src="img/icon-yes.svg"
+                  width="31"
+                  height="21"
+                  alt="галочка"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="rates__buttons">
+          <label class="rates__label" for="radio-1">
+            <div class="rates__toggle toggle"></div>
+          </label>
+          <label class="rates__label" for="radio-2">
+            <div class="rates__toggle toggle rates__toggle--active"></div>
+          </label>
+          <label class="rates__label" for="radio-3">
+            <div class="rates__toggle toggle"></div>
+          </label>
+        </div>
       </section>
       <section class="connect container">
         <h2 class="connect__title">

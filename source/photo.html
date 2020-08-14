@@ -13,23 +13,25 @@
   <body>
     <header class="page-header page-header--home">
       <nav class="main-nav main-nav--close main-nav--nojs container">
-        <div class="main-nav__head container">
-          <a class="main-nav__logo"> </a>
+        <div class="main-nav__head">
+          <a class="main-nav__logo">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/logo-pink-white-desktop.svg"
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="img/logo-pink-white-tablet.svg"
+              />
+              <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" />
+            </picture>
+          </a>
           <button class="main-nav__toggle js-drop-and-close" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--desktop">
-            <a class="main-nav__link main-nav__link--desktop">
-              <img
-                src="img/logo-pink-white-desktop.svg"
-                width="147"
-                height="40"
-                alt="Логотип Пинк"
-              />
-            </a>
-          </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>

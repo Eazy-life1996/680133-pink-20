@@ -3,23 +3,47 @@
   width: auto;
   padding-right: 0;
   padding-left: 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
-.rates__toggle {
-  background-color: @darkgrey-toggle;
-  width: 6px;
-  height: 6px;
-  margin: 19px;
-  border-radius: 50%;
+.rates__buttons {
+  width: 56px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.rates__label {
+  margin-right: 15px;
+}
+
+.rates__label:last-child {
+  margin-right: 0;
 }
 
 .rates__toggle--active {
+  width: 9px;
+  height: 9px;
+  background-color: @white;
   border: 3px solid @darkgrey;
+  &:hover {
+    background-color: @white;
+  }
+  &:active {
+    background-color: @white;
+  }
 }
 
 .rates__table {
-  border-collapse: collapse;
   margin: 0 auto;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.rates__td {
+  width: 85%;
 }
 
 .rates__th {
@@ -27,6 +51,7 @@
   border: 2px solid @darkgrey;
   border-radius: 1px 0px 0px 0px;
   color: @white;
+  width: 85%;
 }
 
 .rates__th--none {
@@ -53,7 +78,6 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
-  width: 257px;
   padding-left: 15px;
   padding-top: 12px;
   padding-bottom: 13px;
