@@ -64,3 +64,55 @@
     background-color: @white;
   }
 }
+
+.comment__autor-info {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .comment {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .comment__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .comment__autor {
+    margin: 0;
+  }
+
+  .comment__autor-info {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+    order: -1;
+  }
+
+  .comment__buttons {
+    margin-top: 30px;
+  }
+
+  .comment__toggle {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment__toggle {
+    display: none;
+  }
+
+  .comment__autor {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .comment__list {
+    margin: 0 auto;
+    width: 688px;
+  }
+}

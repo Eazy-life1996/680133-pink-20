@@ -5,6 +5,7 @@
   padding-left: 0;
   padding-top: 60px;
   padding-bottom: 30px;
+  overflow: hidden;
 }
 
 .rates__buttons {
@@ -17,6 +18,7 @@
 
 .rates__label {
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .rates__label:last-child {
@@ -36,23 +38,46 @@
   }
 }
 
+/*Слайдер*/
+
+.rates__inner-slider {
+  width: 290%;
+  transform: translateX(0);
+  transition: transform 0.3s;
+}
+
 .rates__table {
+  width: 87%;
   margin: 0 auto;
+  table-layout: fixed;
   border-collapse: collapse;
-  overflow: hidden;
 }
 
 .rates__td {
-  width: 85%;
+  width: 87%;
 }
 
 .rates__th {
+  padding: 0;
   background: @darkgrey;
   border: 2px solid @darkgrey;
   border-radius: 1px 0px 0px 0px;
   color: @white;
-  width: 85%;
 }
+
+.radio-1:checked ~ .rates__inner-slider {
+  transform: translateX(-2.3%);
+}
+
+.radio-2:checked ~ .rates__inner-slider {
+  transform: translateX(-32.8%);
+}
+
+.radio-3:checked ~ .rates__inner-slider {
+  transform: translateX(-64.5%);
+}
+
+/*Конец Слайдера*/
 
 .rates__th--none {
   display: none;
@@ -91,10 +116,8 @@
 }
 
 .rates__img {
-  display: block;
-  margin-left: auto;
   margin-right: 19px;
-  padding-top: 5px;
+  float: right;
 }
 
 .rates__price {
@@ -102,10 +125,11 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-top: -18px;
+  margin-top: -19px;
 }
 
 .rates__title {
+  font-weight: bold;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
@@ -114,6 +138,24 @@
 @media (min-width: @tablet-width) {
   .rates__th-row {
     display: block;
+    border-right: none;
+  }
+
+  .rates__th-row--border {
+    border-bottom: none;
+  }
+
+  .rates__table {
+    width: auto;
+  }
+
+  .rates__price {
+    margin-bottom: 10px;
+  }
+
+  .rates__title {
+    margin-top: 11px;
+    margin-bottom: 12px;
   }
 
   .rates__toggle {
@@ -121,7 +163,7 @@
   }
 
   .rates__img {
-    margin: 0 auto;
+    margin-right: 50px;
   }
 
   .rates__td::before {
@@ -133,7 +175,9 @@
     text-transform: none;
     padding-left: 10px;
     padding-right: 10px;
-    width: 152px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    width: 153px;
   }
 
   .rates__th--none {
@@ -147,8 +191,22 @@
     font-size: 18px;
     line-height: 30px;
     text-transform: none;
+    padding-top: 13px;
+    padding-bottom: 13px;
     padding-left: 22px;
     padding-right: 10px;
     width: 234px;
+  }
+
+  .rates__img {
+    margin-right: 50%;
+  }
+
+  .rates__price {
+    margin-bottom: 20px;
+  }
+
+  .rates__title {
+    margin-top: 22px;
   }
 }

@@ -4,20 +4,25 @@
 
 @media (min-width: @tablet-width) {
   .effect {
-    display: flex;
-    justify-content: space-around;
+    display: block;
     align-items: center;
     padding-top: 54px;
     padding-bottom: 40px;
     background-color: @white;
   }
 
+  .effect__center {
+    display: flex;
+    align-items: center;
+  }
+
   .eefect__img {
-      width: 238px;
+    width: 238px;
   }
 
   .effect__block {
     width: 310px;
+    margin-left: auto;
   }
 
   .effect__title {
@@ -39,5 +44,39 @@
     font-size: 14px;
     line-height: 24px;
     color: @pink;
+    &:hover,
+    &:focus {
+      color: @darkgrey;
+    }
+    &:active {
+      color: fade(@darkgrey, 30%);
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect__inner {
+    background-color: @grey;
+    width: auto;
+  }
+
+  .effect__center {
+    width: 903px;
+    margin: 0 auto;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effect__block {
+    margin-left: 70px;
+  }
+
+  .effect__description {
+    width: 534px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
