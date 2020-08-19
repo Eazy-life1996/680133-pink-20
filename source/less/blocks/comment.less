@@ -24,22 +24,25 @@
 }
 
 .comment__buttons {
-  width: 60px;
+  width: 56px;
   margin: 0 auto;
+  margin-top: 20px;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .comment__toggle {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .toggle {
-  padding: 0;
-  border: none;
+  display: block;
   background-color: fade(@darkgrey, 30%);
   width: 6px;
   height: 6px;
   border-radius: 50%;
+  cursor: pointer;
   &:hover {
     background-color: fade(@darkgrey, 60%);
   }
@@ -52,7 +55,7 @@
   margin-right: 0;
 }
 
-.comment__toggle--active {
+.toggle--active {
   width: 9px;
   height: 9px;
   background-color: @white;

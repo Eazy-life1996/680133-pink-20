@@ -16,26 +16,12 @@
   align-items: center;
 }
 
-.rates__label {
-  margin-right: 15px;
-  cursor: pointer;
+.rates__toggle {
+  margin-right: 13px;
 }
 
-.rates__label:last-child {
+.rates__toggle:last-child {
   margin-right: 0;
-}
-
-.rates__toggle--active {
-  width: 9px;
-  height: 9px;
-  background-color: @white;
-  border: 3px solid @darkgrey;
-  &:hover {
-    background-color: @white;
-  }
-  &:active {
-    background-color: @white;
-  }
 }
 
 /*Слайдер*/
@@ -75,6 +61,15 @@
 
 .radio-3:checked ~ .rates__inner-slider {
   transform: translateX(-64.5%);
+}
+
+.radio-1:checked ~ .rates__buttons .rates__toggle--1,
+.radio-2:checked ~ .rates__buttons .rates__toggle--2,
+.radio-3:checked ~ .rates__buttons .rates__toggle--3 {
+  width: 9px;
+  height: 9px;
+  background-color: @white;
+  border: 3px solid @darkgrey;
 }
 
 /*Конец Слайдера*/
