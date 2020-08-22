@@ -32,6 +32,12 @@
   align-items: center;
 }
 
+.fomr-photo__list-range {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .form-photo__fieldset--editor {
   display: flex;
   flex-direction: column;
@@ -75,43 +81,115 @@
   }
 }
 
+.form-photo__range {
+  -webkit-appearance: none;
+  height: 2px;
+  background-color: @darkgrey;
+}
+
+.form-photo__range::-webkit-slider-thumb,
+.form-photo__range::-moz-range-thumb  {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background-color: @white;
+  border-radius: 50%;
+  border: 2px solid @pink;
+}
+
 .form-photo__range--active {
   display: block;
 }
 
 @media (min-width: @tablet-width) {
   .form-photo {
-    padding-top: 57px;
-    padding-bottom: 54px;
-    width: 660px;
     display: grid;
-    grid-template-columns: 300px 275px;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    column-gap: 45px;
-    row-gap: 67px;
+  }
+
+  .form-photo__range {
+    display: block;
+    width: 202px;
+  }
+
+  .form-photo__fieldset--editor {
+    margin-top: 0;
+    height: 228px;
+    flex-direction: row;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .form-photo__list {
+    flex-direction: column;
+    width: 12px;
+    margin-right: 15px;
+  }
+
+  .form-photo__item {
+    height: 50px;
+    width: 22px;
+  }
+
+  .form-photo__item-range {
+    height: 50px;
+    border-bottom: 1px solid fade(@darkgrey, 10%);
+  }
+
+  .form-photo__crop {
+    width: 22px;
+    height: 22px;
+  }
+
+  .form-photo__fill {
+    width: 24px;
+    height: 22px;
+  }
+
+  .form-photo__contrast {
+    width: 16px;
+    height: 16px;
+  }
+
+  .form-photo__fieldset:last-child {
+    width: 260px;
+    min-height: 134px;
+    margin-left: 20px;
+    margin-top: auto;
+    padding-right: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 
   .form-photo__fieldset:first-child {
     grid-row-start: 1;
     grid-row-end: 3;
-  }
-
-  .form-photo__range {
-    width: 253px;
-    display: block;
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 
   .form-photo__button {
     width: 260px;
+    padding-top: 15px;
+    padding-bottom: 16px;
   }
 }
 
-@media (min-width:@desktop-width) {
+@media (min-width: @desktop-width) {
   .form-photo {
     width: 940px;
     margin: 0 auto;
     padding-left: 80px;
   }
+
   .form-photo__range {
     width: 288px;
     display: block;

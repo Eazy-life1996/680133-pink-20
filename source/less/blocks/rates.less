@@ -33,14 +33,21 @@
 }
 
 .rates__table {
-  width: 87%;
+  position: relative;
+  width: 93%;
   margin: 0 auto;
   table-layout: fixed;
   border-collapse: collapse;
 }
 
+.rates__hit {
+  position: absolute;
+  top: 0;
+  margin-left: -2px;
+}
+
 .rates__td {
-  width: 87%;
+  width: 93%;
 }
 
 .rates__th {
@@ -177,6 +184,10 @@
 
   .rates__th--none {
     display: block;
+  }
+
+  .rates__hit {
+    margin-left: 0;
   }
 }
 

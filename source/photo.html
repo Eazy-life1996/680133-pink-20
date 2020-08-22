@@ -345,13 +345,17 @@
         method="POST"
       >
         <fieldset class="form-photo__fieldset">
-          <img
-            class="form-photo__img"
-            src="img/photo-road-mobile@1x.jpg"
-            width="280"
-            height="374"
-            alt="ваше фото для редактирования"
-          />
+          <picture>
+            <source
+              media="(min-width: 660px)"
+              srcset="img/photo-road-tablet@1x.jpg"
+            />
+            <img
+              class="form-photo__img"
+              src="img/photo-road-mobile@1x.jpg"
+              alt="ваше фото для редактирования"
+            />
+          </picture>
         </fieldset>
         <fieldset class="form-photo__fieldset form-photo__fieldset--editor">
           <ul class="form-photo__list">
@@ -361,6 +365,7 @@
                 for="crop"
               >
                 <img
+                  class="form-photo__crop"
                   src="img/icon-editor-crop.svg"
                   width="44"
                   height="44"
@@ -371,6 +376,7 @@
             <li class="form-photo__item">
               <label class="form-photo__label" for="fill">
                 <img
+                  class="form-photo__fill"
                   src="img/icon-editor-fill.svg"
                   width="48"
                   height="43"
@@ -381,6 +387,7 @@
             <li class="form-photo__item">
               <label class="form-photo__label" for="contrast">
                 <img
+                  class="form-photo__contrast"
                   src="img/icon-editor-contrast.svg"
                   width="32"
                   height="32"
@@ -389,19 +396,32 @@
               </label>
             </li>
           </ul>
-          <input
-            class="form-photo__range form-photo__range--active"
-            type="range"
-            name="crop"
-            id="crop"
-          />
-          <input class="form-photo__range" type="range" name="fill" id="fill" />
-          <input
-            class="form-photo__range"
-            type="range"
-            name="contrast"
-            id="contrast"
-          />
+          <ul class="fomr-photo__list-range">
+            <li class="form-photo__item-range">
+              <input
+                class="form-photo__range form-photo__range--active"
+                type="range"
+                name="crop"
+                id="crop"
+              />
+            </li>
+            <li class="form-photo__item-range">
+              <input
+                class="form-photo__range"
+                type="range"
+                name="fill"
+                id="fill"
+              />
+            </li>
+            <li class="form-photo__item-range">
+              <input
+                class="form-photo__range"
+                type="range"
+                name="contrast"
+                id="contrast"
+              />
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="form-photo__fieldset">
           <button class="form-photo__button btn btn--pink" type="submit">

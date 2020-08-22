@@ -217,6 +217,17 @@
                   <p class="rates__price">1,99 USD</p>
                 </th>
                 <th class="rates__th">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="img/hit-mobile.svg"
+                    />
+                    <source
+                      media="(min-width: 660px)"
+                      srcset="img/hit-tablet.svg"
+                    />
+                    <img class="rates__hit" src="img/hit-mobile.svg" alt="" />
+                  </picture>
                   <p class="rates__title">Стандарт</p>
                   <p class="rates__price">3,99 USD</p>
                 </th>
@@ -319,17 +330,17 @@
               </tr>
             </table>
           </div>
-        </div>
-        <div class="rates__buttons">
-          <label class="rates__toggle rates__toggle--1 toggle" for="radio-1">
-          </label>
-          <label
-            class="rates__toggle rates__toggle--2 toggle toggle--active"
-            for="radio-2"
-          >
-          </label>
-          <label class="rates__toggle rates__toggle--3 toggle" for="radio-3">
-          </label>
+          <div class="rates__buttons">
+            <label class="rates__toggle rates__toggle--1 toggle" for="radio-1">
+            </label>
+            <label
+              class="rates__toggle rates__toggle--2 toggle"
+              for="radio-2"
+            >
+            </label>
+            <label class="rates__toggle rates__toggle--3 toggle" for="radio-3">
+            </label>
+          </div>
         </div>
       </section>
       <section class="connect container">
