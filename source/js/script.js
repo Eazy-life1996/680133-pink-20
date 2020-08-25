@@ -19,12 +19,3 @@ navButton.addEventListener("click", function () {
     navMain.classList.remove("main-nav--open");
   }
 });
-
-form.addEventListener("submit", function (evt) {
-  if (!userName.value || !userSurname.value || !userMail.value) {
-    evt.preventDefault();
-    modalFail.classList.add("modal-failur-show")
-  } else {
-    modalSuccess.classList.add("modal-success-show");
-  }
-});
