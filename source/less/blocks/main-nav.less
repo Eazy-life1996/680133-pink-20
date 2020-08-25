@@ -1,10 +1,11 @@
-.main-nav__item:first-child {
-  display: none;
-}
-
 .main-nav {
   padding-right: 0px;
   padding-left: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .main-nav__list {
@@ -19,21 +20,13 @@
 }
 
 .main-nav__head {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 5;
-  min-height: 66px;
   display: flex;
   align-items: center;
-  padding-right: 0;
-  padding-left: 0;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
 .main-nav__logo {
-  background-image: url(../../img/logo-pink-white-mobile.svg);
-  background-repeat: no-repeat;
   width: 74px;
   height: 23px;
   margin-left: 20px;
@@ -48,7 +41,7 @@
 }
 
 .main-nav--close .main-nav__toggle {
-  background-image: url(../../img/icon-menu-burger.svg);
+  background-image: url(../img/icon-menu-burger.svg);
   width: 50px;
   height: 24px;
 }
@@ -69,7 +62,7 @@
 }
 
 .main-nav--open .main-nav__toggle {
-  background-image: url(../../img/icon-menu-cross.svg);
+  background-image: url(../img/icon-menu-cross.svg);
   width: 23px;
   height: 23px;
 }
@@ -120,7 +113,7 @@
   }
 
   .main-nav__logo {
-    background-image: url(../../img/logo-pink-white-tablet.svg);
+    background-image: url(../img/logo-pink-white-tablet.svg);
     width: 145px;
     height: 40px;
   }
@@ -136,21 +129,29 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__head {
+  .main-nav {
+    display: flex;
+    background-color: fade(@black, 30%);
+  }
+
+  .main-nav__toggle {
     display: none;
   }
 
+  .main-nav--close .main-nav__head {
+    background: none;
+    width: auto;
+    margin-left: 120px;
+    padding-bottom: 35px;
+  }
+
   .main-nav .main-nav__list {
-    position: absolute;
-    z-index: 2;
-    width: 1200px;
+    width: 620px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    min-height: 110px;
-    padding-left: 130px;
-    padding-right: 130px;
-    background-color: fade(@black, 30%);
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 136px;
   }
 
   .main-nav__item {
@@ -171,12 +172,5 @@
     &:active {
       color: fade(@black, 30%);
     }
-  }
-
-  .main-nav__item:first-child {
-    display: block;
-    margin-right: 90px;
-    padding-bottom: 43px;
-    padding-top: 27px;
   }
 }

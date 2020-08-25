@@ -13,23 +13,25 @@
   <body>
     <header class="page-header page-header--home">
       <nav class="main-nav main-nav--close main-nav--nojs container">
-        <div class="main-nav__head container">
-          <a class="main-nav__logo"> </a>
+        <div class="main-nav__head">
+          <a class="main-nav__logo">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/logo-pink-white-desktop.svg"
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="img/logo-pink-white-tablet.svg"
+              />
+              <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" />
+            </picture>
+          </a>
           <button class="main-nav__toggle js-drop-and-close" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--desktop">
-            <a class="main-nav__link main-nav__link--desktop">
-              <img
-                src="img/logo-pink-white-desktop.svg"
-                width="147"
-                height="40"
-                alt="Логотип Пинк"
-              />
-            </a>
-          </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -69,17 +71,25 @@
           <li class="photo__item">
             <div class="photo__best-today">Панорама дня</div>
             <a>
-              <img
-                class="photo__img photo__img--big"
-                src="img/panorama-mobile@1x.jpg"
-                width="320"
-                height="137"
-                alt="панорамное фото"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/panorama-desktop@1x.jpg"
+                />
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/panorama-tablet@1x.jpg"
+                />
+                <img
+                  class="photo__img photo__img--big"
+                  src="img/panorama-mobile@1x.jpg"
+                  alt="панорамное фото"
+                />
+              </picture>
             </a>
-            <div class="photo__story-like">
+            <div class="photo__story-like photo__story--bg">
               <p class="photo__autor">
-                <b>Анна</b> <span>(5 минут назад)</span>
+                <b>Анна</b> <span class="photo__time">(5 минут назад)</span>
               </p>
               <p class="photo__autor-description">
                 Прыгать или нет? Напишите в комментарии свой совет и смотрите
@@ -99,17 +109,25 @@
           </li>
           <li class="photo__item">
             <a>
-              <img
-                class="photo__img"
-                src="img/photo-car-mobile@1x.jpg"
-                width="280"
-                height="180"
-                alt="фото автомобиля тесла"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/photo-car-desktop@1x.jpg"
+                />
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/photo-car-tablet@1x.jpg"
+                />
+                <img
+                  class="photo__img"
+                  src="img/photo-car-mobile@1x.jpg"
+                  alt="фото автомобиля тесла"
+                />
+              </picture>
             </a>
             <div class="photo__story-like">
               <p class="photo__autor">
-                <b>Левон</b> <span>(5 часов назад)</span>
+                <b>Левон</b> <span class="photo__time">(5 часов назад)</span>
               </p>
               <p class="photo__autor-description">
                 Вчера он на луну летал, сегодня в руки к нам попал.
@@ -128,17 +146,25 @@
           </li>
           <li class="photo__item">
             <a>
-              <img
-                class="photo__img"
-                src="img/photo-drumset-mobile@1x.jpg"
-                width="280"
-                height="180"
-                alt="фото барабанной установки"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/photo-drumset-desktop@1x.jpg"
+                />
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/photo-drumset-tablet@1x.jpg"
+                />
+                <img
+                  class="photo__img"
+                  src="img/photo-drumset-mobile@1x.jpg"
+                  alt="фото барабанной установки"
+                />
+              </picture>
             </a>
             <div class="photo__story-like">
               <p class="photo__autor">
-                <b>Антон</b> <span>(12 часов назад)</span>
+                <b>Антон</b> <span class="photo__time">(12 часов назад)</span>
               </p>
               <p class="photo__autor-description">
                 Соседи будут рады!
@@ -157,17 +183,25 @@
           </li>
           <li class="photo__item">
             <a>
-              <img
-                class="photo__img"
-                src="img/photo-window-mobile@1x.jpg"
-                width="280"
-                height="180"
-                alt="фото небоскрёба"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/photo-window-desktop@1x.jpg"
+                />
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/photo-window-tablet@1x.jpg"
+                />
+                <img
+                  class="photo__img"
+                  src="img/photo-window-mobile@1x.jpg"
+                  alt="фото окна небоскрёба"
+                />
+              </picture>
             </a>
             <div class="photo__story-like">
               <p class="photo__autor">
-                <b>Борис</b> <span>(20 часов назад)</span>
+                <b>Борис</b> <span class="photo__time">(20 часов назад)</span>
               </p>
               <p class="photo__autor-description">
                 Здесь могла быть ваша цитата о высоком и вечном.
@@ -186,17 +220,25 @@
           </li>
           <li class="photo__item">
             <a>
-              <img
-                class="photo__img"
-                src="img/photo-fair-mobile@1x.jpg"
-                width="280"
-                height="180"
-                alt="фото кубанская бахча"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/photo-fair-desktop@1x.jpg"
+                />
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/photo-fair-tablet@1x.jpg"
+                />
+                <img
+                  class="photo__img"
+                  src="img/photo-fair-mobile@1x.jpg"
+                  alt="фото кубанская бахча"
+                />
+              </picture>
             </a>
             <div class="photo__story-like">
               <p class="photo__autor">
-                <b>Сергей</b> <span>(25 часов назад)</span>
+                <b>Сергей</b> <span class="photo__time">(25 часов назад)</span>
               </p>
               <p class="photo__autor-description">
                 Самая кубанская в мире!
@@ -214,16 +256,26 @@
             </div>
           </li>
           <li class="photo__item">
-            <img
-              class="photo__img"
-              src="img/photo-pov-mobile@1x.jpg"
-              width="280"
-              height="180"
-              alt="фото горного пейзажа"
-            />
+            <a>
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/photo-pov-desktop@1x.jpg"
+                />
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/photo-pov-tablet@1x.jpg"
+                />
+                <img
+                  class="photo__img"
+                  src="img/photo-pov-mobile@1x.jpg"
+                  alt="фото горного пейзажа"
+                />
+              </picture>
+            </a>
             <div class="photo__story-like">
               <p class="photo__autor">
-                <b>Максим</b> <span>(40 часов назад)</span>
+                <b>Максим</b> <span class="photo__time">(40 часов назад)</span>
               </p>
               <p class="photo__autor-description">
                 Где снег-то?
@@ -242,17 +294,25 @@
           </li>
           <li class="photo__item">
             <a>
-              <img
-                class="photo__img"
-                src="img/photo-wing-mobile@1x.jpg"
-                width="280"
-                height="180"
-                alt="фото крыла самолета"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/photo-wing-desktop@1x.jpg"
+                />
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/photo-wing-tablet@1x.jpg"
+                />
+                <img
+                  class="photo__img"
+                  src="img/photo-wing-mobile@1x.jpg"
+                  alt="фото крыла самолета"
+                />
+              </picture>
             </a>
             <div class="photo__story-like">
               <p class="photo__autor">
-                <b>Надежда</b> <span>(45 часов назад)</span>
+                <b>Надежда</b> <span class="photo__time">(45 часов назад)</span>
               </p>
               <p class="photo__autor-description">
                 Всем GM и взаимные лайки!
@@ -271,7 +331,7 @@
           </li>
         </ul>
       </section>
-      <section class="photo-description__description">
+      <section class="photo-description__description container">
         <h2 class="visually-hidden">выложите свое фото</h2>
         <p class="photo-description__p">
           Затмите их всех! <br />
@@ -285,34 +345,83 @@
         method="POST"
       >
         <fieldset class="form-photo__fieldset">
-          <img
-            class="form-photo__img"
-            src="img/photo-road-mobile@1x.jpg"
-            width="280"
-            height="374"
-            alt="ваше фото для редактирования"
-          />
+          <picture>
+            <source
+              media="(min-width: 660px)"
+              srcset="img/photo-road-tablet@1x.jpg"
+            />
+            <img
+              class="form-photo__img"
+              src="img/photo-road-mobile@1x.jpg"
+              alt="ваше фото для редактирования"
+            />
+          </picture>
         </fieldset>
-        <fieldset class="form-photo__fieldset">
-          <input
-            class="form-photo__range form-photo__range--active"
-            type="range"
-            name="crop"
-            id="crop"
-          />
-          <label
-            class="form-photo__crop form-photo__crop--active"
-            for="crop"
-          ></label>
-          <input class="form-photo__range" type="range" name="fill" id="fill" />
-          <label class="form-photo__fill" for="fill"></label>
-          <input
-            class="form-photo__range"
-            type="range"
-            name="contrast"
-            id="contrast"
-          />
-          <label class="form-photo__contrast" for="contrast"></label>
+        <fieldset class="form-photo__fieldset form-photo__fieldset--editor">
+          <ul class="form-photo__list">
+            <li class="form-photo__item">
+              <label
+                class="form-photo__label form-photo__label--active"
+                for="crop"
+              >
+                <img
+                  class="form-photo__crop"
+                  src="img/icon-editor-crop.svg"
+                  width="44"
+                  height="44"
+                  alt=""
+                />
+              </label>
+            </li>
+            <li class="form-photo__item">
+              <label class="form-photo__label" for="fill">
+                <img
+                  class="form-photo__fill"
+                  src="img/icon-editor-fill.svg"
+                  width="48"
+                  height="43"
+                  alt=""
+                />
+              </label>
+            </li>
+            <li class="form-photo__item">
+              <label class="form-photo__label" for="contrast">
+                <img
+                  class="form-photo__contrast"
+                  src="img/icon-editor-contrast.svg"
+                  width="32"
+                  height="32"
+                  alt=""
+                />
+              </label>
+            </li>
+          </ul>
+          <ul class="fomr-photo__list-range">
+            <li class="form-photo__item-range">
+              <input
+                class="form-photo__range form-photo__range--active"
+                type="range"
+                name="crop"
+                id="crop"
+              />
+            </li>
+            <li class="form-photo__item-range">
+              <input
+                class="form-photo__range"
+                type="range"
+                name="fill"
+                id="fill"
+              />
+            </li>
+            <li class="form-photo__item-range">
+              <input
+                class="form-photo__range"
+                type="range"
+                name="contrast"
+                id="contrast"
+              />
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="form-photo__fieldset">
           <button class="form-photo__button btn btn--pink" type="submit">
@@ -378,6 +487,6 @@
         </a>
       </div>
     </footer>
-    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

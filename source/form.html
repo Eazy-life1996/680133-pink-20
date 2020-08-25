@@ -13,23 +13,25 @@
   <body>
     <header class="page-header page-header--home">
       <nav class="main-nav main-nav--close container main-nav--nojs">
-        <div class="main-nav__head container">
-          <a class="main-nav__logo"> </a>
+        <div class="main-nav__head">
+          <a class="main-nav__logo">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/logo-pink-white-desktop.svg"
+              />
+              <source
+                media="(min-width: 660px)"
+                srcset="img/logo-pink-white-tablet.svg"
+              />
+              <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк" />
+            </picture>
+          </a>
           <button class="main-nav__toggle js-drop-and-close" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--desktop">
-            <a class="main-nav__link main-nav__link--desktop">
-              <img
-                src="img/logo-pink-white-desktop.svg"
-                width="147"
-                height="40"
-                alt="Логотип Пинк"
-              />
-            </a>
-          </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -67,38 +69,38 @@
       >
         <fieldset class="form__field form__field--user-name">
           <ul class="form__list">
-            <li class="from__item">
+            <li class="form__item">
               <label class="form__label">
                 Фамилия:
                 <input
-                  class="form__input"
+                  class="form__input form__input--surname"
                   type="text"
                   name="surname"
-                  value="Укажите фамилию *"
+                  placeholder="Укажите фамилию *"
                   required
                 />
               </label>
             </li>
-            <li class="from__item">
+            <li class="form__item">
               <label class="form__label">
                 Имя:
                 <input
-                  class="form__input"
+                  class="form__input form__input--name"
                   type="text"
                   name="name"
-                  value="Укажите имя *"
+                  placeholder="Введите ваше имя *"
                   required
                 />
               </label>
             </li>
-            <li class="from__item">
+            <li class="form__item">
               <label class="form__label">
                 Отчество:
                 <input
                   class="form__input"
                   type="text"
                   name="patronymic"
-                  value="Ну и отчество тоже"
+                  placeholder="Ну и отчество тоже"
                 />
               </label>
             </li>
@@ -106,7 +108,7 @@
         </fieldset>
 
         <fieldset class="form__field form__field--achievements">
-          <legend class="form__legend">
+          <legend class="form__legend form__legend--grey">
             Ваши безбашенные достижения в путешествии
           </legend>
           <ul class="form__list">
@@ -122,7 +124,7 @@
                 >Сделал селфи с акулой</label
               >
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--2">
               <input
                 class="form__input-check"
                 type="checkbox"
@@ -134,7 +136,7 @@
                 >Обгорел на пляже</label
               >
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--3">
               <input
                 class="form__input-check"
                 type="checkbox"
@@ -145,7 +147,7 @@
                 >Видел Чака Норриса</label
               >
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--4">
               <input
                 class="form__input-check"
                 type="checkbox"
@@ -156,9 +158,9 @@
                 >Накупил сувениров</label
               >
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--5">
               <input
-                class="form__input-check"
+                class="form__input-check form__input-check--2"
                 type="checkbox"
                 name="tower"
                 id="tower"
@@ -166,7 +168,7 @@
               />
               <label class="form__label-check" for="tower">Удержал башню</label>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--6">
               <input
                 class="form__input-check"
                 type="checkbox"
@@ -181,74 +183,120 @@
           </ul>
         </fieldset>
         <fieldset class="form__field form__field--contacts">
+          <legend class="form__legend form__legend--none">
+            контактная информация
+          </legend>
           <ul class="form__list">
             <li class="form__item">
-              <label class="form__label">
+              <label class="form__label" for="phone">
                 Номер телефона
-                <input
-                  class="form__input"
-                  type="tel"
-                  name="phone"
-                  value="Номер, пожалуйста"
-                  pattern="+79[0-9]{9}|8[0-9]{10}"
-                />
               </label>
+              <input
+                class="form__input"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Номер, пожалуйста"
+                pattern="+79[0-9]{9}|8[0-9]{10}"
+              />
             </li>
             <li class="form__item">
-              <label class="form__label">
+              <label class="form__label" for="email">
                 Адрес почты
-                <input
-                  class="form__input"
-                  type="email"
-                  name="email"
-                  value="Введите почту *"
-                  required
-                />
               </label>
+              <input
+                class="form__input form__input--email"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Введите почту *"
+                required
+              />
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__field form__field--aplication">
-          <legend class="form__legend">
+          <legend class="form__legend form__legend--grey">
             С каким приложением путешествовали?
           </legend>
-          <input
-            class="form__radio"
-            type="radio"
-            name="pink-aplication"
-            value="iOS"
-            id="ios"
-          />
-          <label class="form__label-check" for="ios">Pink для iOS</label>
-          <input
-            class="form__radio"
-            type="radio"
-            name="pink-aplication"
-            value="android"
-            id="android"
-          />
-          <label class="form__label-check" for="android">Pink на Android</label>
-          <input
-            class="form__radio"
-            type="radio"
-            name="pink-aplication"
-            value="Windows-phone"
-            id="win-phone"
-          />
-          <label class="form__label-check" for="win-phone">Windows Phone</label>
+          <ul class="form__list">
+            <li class="form__item">
+              <input
+                class="form__radio"
+                type="radio"
+                name="pink-aplication"
+                value="iOS"
+                id="ios"
+                checked
+              />
+              <label class="form__label-check" for="ios">Pink для iOS</label>
+            </li>
+            <li class="form__item">
+              <input
+                class="form__radio"
+                type="radio"
+                name="pink-aplication"
+                value="android"
+                id="android"
+              />
+              <label class="form__label-check" for="android"
+                >Pink на Android</label
+              >
+            </li>
+            <li class="form__item">
+              <input
+                class="form__radio"
+                type="radio"
+                name="pink-aplication"
+                value="Windows-phone"
+                id="win-phone"
+              />
+              <label class="form__label-check" for="win-phone"
+                >Windows Phone</label
+              >
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="form__field form__field--reviews">
-          <legend class="form__legend">Опишите свои эмоции</legend>
-          <textarea class="form__comment" name="emotion" cols="25" rows="10">
-            Можно прям в красках, не стесняясь в выражениях
-          </textarea>
+          <legend class="form__legend form__legend--center">
+            Опишите свои эмоции
+          </legend>
+          <textarea class="form__comment" name="emotion">
+Можно прям в красках, не стесняясь в выражениях</textarea
+          >
+        </fieldset>
+        <div class="form__button-block">
           <button class="form__button btn btn--green" type="submit">
             Отправить форму
           </button>
           <p class="form__p-info">
             <span class="form__star">*</span> — обязательные поля
           </p>
-        </fieldset>
+        </div>
+        <div class="modal modal-failur">
+          <h3 class="modal__title">Что-то пошло не так!</h3>
+          <p class="modal__description">
+            Проверьте поля, выделенные красным, скорее всего вы забыли их
+            заполнить
+          </p>
+          <div class="modal__block modal__block--desktop">
+            <input type="button" class="modal__button btn--green" value="Ок" />
+          </div>
+        </div>
+        <div class="modal modal-success">
+          <h3 class="modal__title">Ваша заявка отправлена</h3>
+          <p class="modal__description">
+            Спасибо за ваше участие, ваша заявка уже поступила к нам. В
+            ближайшее время мы рассмотрим ее и оповестим вас.
+          </p>
+          <div class="modal__block modal__block--grey">
+            <input
+              type="button"
+              class="modal__button btn--green"
+              value="Закрыть окно"
+            />
+          </div>
+        </div>
       </form>
     </main>
 
@@ -305,25 +353,6 @@
         </a>
       </div>
     </footer>
-    <div class="modal modal-failur">
-      <h3 class="modal__title">Что-то пошло не так!</h3>
-      <p class="modal__description">
-        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-      </p>
-      <div class="modal__block modal__block--desktop">
-        <input type="button" class="modal__button btn--green" value="Ок" />
-      </div>
-    </div>
-    <div class="modal modal-success">
-      <h3 class="modal__title">Ваша заявка отправлена</h3>
-      <p class="modal__description">
-        Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее
-        время мы рассмотрим ее и оповестим вас.
-      </p>
-      <div class="modal__block modal__block--grey">
-        <input type="button" class="modal__button btn--green" value="Закрыть окно" />
-      </div>
-    </div>
-    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
