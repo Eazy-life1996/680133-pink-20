@@ -1,3 +1,7 @@
+.form {
+  position: relative;
+}
+
 .form__field {
   border: none;
   background-color: @white;
@@ -114,7 +118,7 @@
   }
 }
 
-.form__input[value] {
+.form__input[placeholder] {
   font-size: 18px;
   line-height: 30px;
   color: @darkgrey;
@@ -135,29 +139,6 @@
   color: @darkgrey;
 }
 
-.btn--green {
-  border: none;
-  background-color: @green;
-  border: 2px solid @green;
-  border-radius: 1px;
-  width: 276px;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: @white;
-  cursor: pointer;
-  &:hover {
-    background-color: @green-hover;
-    border: 2px solid @green-hover;
-    border-radius: 1px;
-  }
-  &:active {
-    color: fade(@white, 30%);
-  }
-}
-
 .form__p-info {
   margin-top: 46px;
   font-size: 14px;
@@ -169,6 +150,10 @@
 
 .form__star {
   color: @pink;
+}
+
+.form__button {
+  width: 276px;
 }
 
 @media (min-width: @tablet-width) {
@@ -221,6 +206,8 @@
   }
 
   .form__field--contacts {
+    padding-top: 14px;
+    padding-bottom: 14px;
     position: relative;
     grid-row-start: 3;
     grid-row-end: 4;
@@ -232,7 +219,7 @@
     width: 59px;
     height: 56px;
     position: absolute;
-    top: 49px;
+    top: 33px;
     right: 60px;
   }
 
@@ -242,7 +229,7 @@
     width: 59px;
     height: 56px;
     position: absolute;
-    top: 178px;
+    top: 162px;
     right: 60px;
   }
 
@@ -272,6 +259,10 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+  }
+
+  .form__button {
+    width: 296px;
   }
 }
 
@@ -312,12 +303,12 @@
   }
 
   .form__field--contacts::before {
-    top: 49px;
+    top: 33px;
     left: 390px;
   }
 
   .form__field--contacts::after {
-    top: 49px;
+    top: 33px;
     right: 75px;
   }
 
@@ -333,6 +324,8 @@
 
   .form__field--achievements {
     width: 940px;
+    padding-top: 47px;
+    padding-bottom: 11px;
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
@@ -383,6 +376,7 @@
 
   .form__comment {
     width: 816px;
+    min-height: 124px;
   }
 
   .form__button-block {
