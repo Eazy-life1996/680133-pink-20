@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
@@ -108,9 +108,7 @@
       <h1 class="visually-hidden">Приложение пинк!</h1>
       <section class="page-title page-title--home container">
         <h2 class="visually-hidden">Слоган</h2>
-        <p class="page-title__description">
-          Устали от серости мегаполиса?
-        </p>
+        <p class="page-title__description">Устали от серости мегаполиса?</p>
         <p class="page-title__description">
           Нам есть, что вам <br />
           предложить!
@@ -118,30 +116,32 @@
       </section>
       <section class="advantages advantages__inner container">
         <h2 class="visually-hidden">Перечень преймуществ</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__subtitle">Поднимает настроение</h3>
-            <p class="advantages__description">
-              Приложение позволит вам победить осеннюю хандру и депрессию
-              буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__subtitle">Меняет мир вокруг</h3>
-            <p class="advantages__description">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью,
-              чтобы усилить эффект
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__subtitle">Заводит новых друзей</h3>
-            <p class="advantages__description">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-              заводите новых
-            </p>
-          </li>
-        </ul>
-        <div class="advantages__img"></div>
+        <div class="advantages__block">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__subtitle">Поднимает настроение</h3>
+              <p class="advantages__description">
+                Приложение позволит вам победить осеннюю хандру и депрессию
+                буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__subtitle">Меняет мир вокруг</h3>
+              <p class="advantages__description">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                чтобы усилить эффект
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__subtitle">Заводит новых друзей</h3>
+              <p class="advantages__description">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                заводите новых
+              </p>
+            </li>
+          </ul>
+          <div class="advantages__img"></div>
+        </div>
         <div class="advantges__img-block">
           <div class="advantages__img-desktop advantages__img-desktop--1"></div>
           <div class="advantages__img-desktop advantages__img-desktop--2"></div>
@@ -155,9 +155,7 @@
             <img class="effect__img" src="img/time.svg" alt="часы" />
           </picture>
           <div class="effect__block">
-            <h2 class="effect__title">
-              Эффект на 24 часа!
-            </h2>
+            <h2 class="effect__title">Эффект на 24 часа!</h2>
             <p class="effect__description">
               Британские ученые провели исследования и доказали, что
               положительный эффект от использования приложения длится <br />
@@ -333,10 +331,7 @@
           <div class="rates__buttons">
             <label class="rates__toggle rates__toggle--1 toggle" for="radio-1">
             </label>
-            <label
-              class="rates__toggle rates__toggle--2 toggle"
-              for="radio-2"
-            >
+            <label class="rates__toggle rates__toggle--2 toggle" for="radio-2">
             </label>
             <label class="rates__toggle rates__toggle--3 toggle" for="radio-3">
             </label>

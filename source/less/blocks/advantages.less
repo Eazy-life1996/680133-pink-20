@@ -19,7 +19,7 @@
 }
 
 .advantages__subtitle {
-  color: @title-black;
+  color: @black;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -38,7 +38,8 @@
   background-repeat: no-repeat;
   position: absolute;
   bottom: 0;
-  right: 81px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .advantages__img--desktop {
@@ -51,9 +52,14 @@
     min-height: 500px;
   }
 
+  .advantages__block {
+    width: 620px;
+    margin: 0 auto;
+  }
+
   .advantages__img {
     background-image: url(../img/iphone-screen-3-tablet@1x.png);
-    left: 20px;
+    left: 25%;
     bottom: 0;
     width: 268px;
     height: 481px;
@@ -62,8 +68,7 @@
   .advantages__list {
     width: 300px;
     padding-top: 70px;
-    margin-left: auto;
-    margin-right: 20px;
+    margin-left: 320px;
     text-align: left;
   }
 }

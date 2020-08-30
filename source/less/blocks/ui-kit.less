@@ -33,6 +33,22 @@
       color: fade(@white, 30%);
     }
   }
+
+  .btn-link {
+    border: 3px solid @white;
+    border-radius: 29px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    width: 280px;
+    &:hover {
+      background-color: @white;
+      color: @pink;
+    }
+    &:active {
+      color: fade(@pink, 30%);
+    }
+  }
   
   .btn--grey {
     color: fade(@darkgrey, 10%);
@@ -45,5 +61,36 @@
       border: 3px solid fade(@darkgrey, 10%);
       background-color: fade(@darkgrey, 30%);
       color: fade(@white, 30%);
+    }
+  }
+
+  .connect__link {
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration: none;
+    color: @pink;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: @darkgrey;
+    }
+    &:active {
+      color: fade(@darkgrey, 30%);
+    }
+  }
+
+  .main-nav__link {
+    text-decoration: none;
+    color: @white;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    &:hover {
+      color: @pink;
+    }
+    &:active {
+      color: fade(@pink, 30%);
     }
   }
