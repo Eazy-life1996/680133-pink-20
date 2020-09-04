@@ -67,7 +67,7 @@ const webpImage = () => {
     .pipe(gulp.dest("build/img"));
 };
 
-exports.webp = webpImage;
+exports.webpImage = webpImage;
 
 //copy
 
@@ -99,7 +99,7 @@ exports.clean = clean;
 
 //build
 
-const build = () => gulp.series(clean, copy, styles, sprite);
+const build = gulp.series(clean, copy, styles, sprite);
 
 exports.build = build;
 

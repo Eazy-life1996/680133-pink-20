@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
@@ -72,17 +72,21 @@
             <div class="photo__best-today">Панорама дня</div>
             <a>
               <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/panorama-mobile.webp 1x, img/panorama-mobile@2x.webp 2x"> -->
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/panorama-desktop@1x.jpg"
+                  srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x"
                 />
                 <source
                   media="(min-width: 660px)"
-                  srcset="img/panorama-tablet@1x.jpg"
+                  srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x"
                 />
                 <img
                   class="photo__img photo__img--big"
                   src="img/panorama-mobile@1x.jpg"
+                  srcset="img/panorama-mobile@2x.jpg 2x"
                   alt="панорамное фото"
                 />
               </picture>
@@ -110,17 +114,21 @@
           <li class="photo__item">
             <a>
               <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-car-mobile.webp 1x, img/photo-car-mobile@2x.webp 2x"> -->
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/photo-car-desktop@1x.jpg"
+                  srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x"
                 />
                 <source
                   media="(min-width: 660px)"
-                  srcset="img/photo-car-tablet@1x.jpg"
+                  srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x"
                 />
                 <img
                   class="photo__img"
                   src="img/photo-car-mobile@1x.jpg"
+                  srcset="img/photo-car-mobile@2x.jpg 2x"
                   alt="фото автомобиля тесла"
                 />
               </picture>
@@ -147,17 +155,21 @@
           <li class="photo__item">
             <a>
               <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-drumset-mobile.webp 1x, img/photo-drumset-mobile@2x.webp 2x"> -->
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/photo-drumset-desktop@1x.jpg"
+                  srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x"
                 />
                 <source
                   media="(min-width: 660px)"
-                  srcset="img/photo-drumset-tablet@1x.jpg"
+                  srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x"
                 />
                 <img
                   class="photo__img"
                   src="img/photo-drumset-mobile@1x.jpg"
+                  srcset="img/photo-drumset-mobile@2x.jpg 2x"
                   alt="фото барабанной установки"
                 />
               </picture>
@@ -166,9 +178,7 @@
               <p class="photo__autor">
                 <b>Антон</b> <span class="photo__time">(12 часов назад)</span>
               </p>
-              <p class="photo__autor-description">
-                Соседи будут рады!
-              </p>
+              <p class="photo__autor-description">Соседи будут рады!</p>
               <div class="photo__like">
                 <img
                   class="photo__like-image"
@@ -184,17 +194,21 @@
           <li class="photo__item">
             <a>
               <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-window-mobile.webp 1x, img/photo-window-mobile@2x.webp 2x"> -->
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/photo-window-desktop@1x.jpg"
+                  srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x"
                 />
                 <source
                   media="(min-width: 660px)"
-                  srcset="img/photo-window-tablet@1x.jpg"
+                  srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x"
                 />
                 <img
                   class="photo__img"
                   src="img/photo-window-mobile@1x.jpg"
+                  srcset="img/photo-window-mobile@2x.jpg 2x"
                   alt="фото окна небоскрёба"
                 />
               </picture>
@@ -221,17 +235,21 @@
           <li class="photo__item">
             <a>
               <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-fair-mobile.webp 1x, img/photo-fair-mobile@2x.webp 2x"> -->
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/photo-fair-desktop@1x.jpg"
+                  srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x"
                 />
                 <source
                   media="(min-width: 660px)"
-                  srcset="img/photo-fair-tablet@1x.jpg"
+                  srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x"
                 />
                 <img
                   class="photo__img"
                   src="img/photo-fair-mobile@1x.jpg"
+                  srcset="img/photo-fair-mobile@2x.jpg 2x"
                   alt="фото кубанская бахча"
                 />
               </picture>
@@ -240,9 +258,7 @@
               <p class="photo__autor">
                 <b>Сергей</b> <span class="photo__time">(25 часов назад)</span>
               </p>
-              <p class="photo__autor-description">
-                Самая кубанская в мире!
-              </p>
+              <p class="photo__autor-description">Самая кубанская в мире!</p>
               <div class="photo__like">
                 <img
                   class="photo__like-image"
@@ -258,17 +274,21 @@
           <li class="photo__item">
             <a>
               <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-pov-mobile.webp 1x, img/photo-pov-mobile@2x.webp 2x"> -->
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/photo-pov-desktop@1x.jpg"
+                  srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x"
                 />
                 <source
                   media="(min-width: 660px)"
-                  srcset="img/photo-pov-tablet@1x.jpg"
+                  srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x"
                 />
                 <img
                   class="photo__img"
                   src="img/photo-pov-mobile@1x.jpg"
+                  srcset="img/photo-pov-mobile@2x.jpg 2x"
                   alt="фото горного пейзажа"
                 />
               </picture>
@@ -277,9 +297,7 @@
               <p class="photo__autor">
                 <b>Максим</b> <span class="photo__time">(40 часов назад)</span>
               </p>
-              <p class="photo__autor-description">
-                Где снег-то?
-              </p>
+              <p class="photo__autor-description">Где снег-то?</p>
               <div class="photo__like">
                 <img
                   class="photo__like-image"
@@ -295,17 +313,21 @@
           <li class="photo__item">
             <a>
               <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-wing-mobile.webp 1x, img/photo-wing-mobile@2x.webp 2x"> -->
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/photo-wing-desktop@1x.jpg"
+                  srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x"
                 />
                 <source
                   media="(min-width: 660px)"
-                  srcset="img/photo-wing-tablet@1x.jpg"
+                  srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x"
                 />
                 <img
                   class="photo__img"
                   src="img/photo-wing-mobile@1x.jpg"
+                  srcset="img/photo-wing-mobile@2x.jpg 2x"
                   alt="фото крыла самолета"
                 />
               </picture>
@@ -314,9 +336,7 @@
               <p class="photo__autor">
                 <b>Надежда</b> <span class="photo__time">(45 часов назад)</span>
               </p>
-              <p class="photo__autor-description">
-                Всем GM и взаимные лайки!
-              </p>
+              <p class="photo__autor-description">Всем GM и взаимные лайки!</p>
               <div class="photo__like">
                 <img
                   class="photo__like-image"
@@ -340,97 +360,91 @@
       </section>
 
       <form
-        class="form-photo container"
+        class="form-photo"
         action="https://echo.htmlacademy.ru"
         method="POST"
       >
-        <fieldset class="form-photo__fieldset">
-          <picture>
-            <source
-              media="(min-width: 660px)"
-              srcset="img/photo-road-tablet@1x.jpg"
+        <div class="form-photo__left">
+          <fieldset class="form-photo__fieldset">
+            <input
+              class="form-photo__input-file input-file visually-hidden"
+              type="file"
+              id="form-photo__input-file"
             />
-            <img
-              class="form-photo__img"
-              src="img/photo-road-mobile@1x.jpg"
-              alt="ваше фото для редактирования"
-            />
-          </picture>
-        </fieldset>
-        <fieldset class="form-photo__fieldset form-photo__fieldset--editor">
-          <ul class="form-photo__list">
-            <li class="form-photo__item">
-              <label
-                class="form-photo__label form-photo__label--active"
-                for="crop"
-              >
-                <img
-                  class="form-photo__crop"
-                  src="img/icon-editor-crop.svg"
-                  width="44"
-                  height="44"
-                  alt=""
+            <label
+              class="form-photo__label-file label-file"
+              for="form-photo__input-file"
+            >
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop.webp 1x, img/photo-road-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet.webp 1x, img/photo-road-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-road-mobile.webp 1x, img/photo-road-mobile@2x.webp 2x"> -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x"
                 />
-              </label>
-            </li>
-            <li class="form-photo__item">
-              <label class="form-photo__label" for="fill">
-                <img
-                  class="form-photo__fill"
-                  src="img/icon-editor-fill.svg"
-                  width="48"
-                  height="43"
-                  alt=""
+                <source
+                  media="(min-width: 660px)"
+                  srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x"
                 />
-              </label>
-            </li>
-            <li class="form-photo__item">
-              <label class="form-photo__label" for="contrast">
                 <img
-                  class="form-photo__contrast"
-                  src="img/icon-editor-contrast.svg"
-                  width="32"
-                  height="32"
-                  alt=""
+                  class="form-photo__img-file"
+                  src="img/photo-road-mobile@1x.jpg"
+                  srcset="img/photo-road-mobile@2x.jpg 2x"
+                  alt="Фото для редактирования"
                 />
-              </label>
-            </li>
-          </ul>
-          <ul class="fomr-photo__list-range">
-            <li class="form-photo__item-range">
-              <input
-                class="form-photo__range form-photo__range--active"
-                type="range"
-                name="crop"
-                id="crop"
-              />
-            </li>
-            <li class="form-photo__item-range">
-              <input
-                class="form-photo__range"
-                type="range"
-                name="fill"
-                id="fill"
-              />
-            </li>
-            <li class="form-photo__item-range">
-              <input
-                class="form-photo__range"
-                type="range"
-                name="contrast"
-                id="contrast"
-              />
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form-photo__fieldset">
-          <button class="form-photo__button btn btn--pink" type="submit">
-            Запостить
-          </button>
-          <button class="form-photo__button btn btn--grey" type="reset">
-            Отмена
-          </button>
-        </fieldset>
+              </picture>
+            </label>
+          </fieldset>
+        </div>
+        <div class="form-photo__right">
+          <fieldset class="form-photo__fieldset form-photo__fieldset--editor">
+            <ul class="form-photo__list">
+              <li class="form-photo__item">
+                <input
+                  class="form-photo__range input-range"
+                  type="range"
+                  name="crop"
+                  id="crop"
+                />
+                <label class="form-photo__label label-range" for="crop">
+                  <img class="form-photo__img" width="44" height="44" src="img/icon-editor-crop.svg" alt="">
+                </label>
+              </li>
+              <li class="form-photo__item">
+                <input
+                  class="form-photo__range input-range"
+                  type="range"
+                  name="fill"
+                  id="fill"
+                />
+                <label class="form-photo__label label-range" for="fill">
+                  <img class="form-photo__img" width="48" height="43" src="img/icon-editor-fill.svg" alt="">
+                </label>
+              </li>
+              <li class="form-photo__item">
+                <input
+                  class="form-photo__range input-range"
+                  type="range"
+                  name="contrast"
+                  id="contrast"
+                />
+                <label class="form-photo__label label-range" for="contrast">
+                  <img class="form-photo__img cont" width="32" height="32" src="img/icon-editor-contrast.svg" alt="">
+                </label>
+              </li>
+          </fieldset>
+          <fieldset class="form-photo__fieldset">
+            <div class="form-photo__btns">
+              <button class="form-photo__button btn--pink" type="submit">
+                Запостить
+              </button>
+              <button class="form-photo__button btn--grey" type="reset">
+                Отмена
+              </button>
+            </div>
+          </fieldset>
+        </div>
       </form>
     </main>
 
