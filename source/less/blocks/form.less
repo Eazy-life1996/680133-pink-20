@@ -14,6 +14,8 @@
 .form__field--aplication,
 .form__field--achievements {
   background-color: @grey;
+  width: 320px;
+  margin-left: -20px;
 }
 
 .form__field--aplication {
@@ -94,7 +96,92 @@
   text-transform: uppercase;
 }
 
+.form__item {
+  position: relative;
+}
+
+.form__item:last-child{
+  margin-bottom: 0;
+}
+
+.form__input-check:checked + .form__label-check::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 22px;
+  width: 39px;
+  height: 39px;
+  background-image: url("../img/icon-checkbox-on.svg");
+}
+
+.form__input-check:not(:checked) + .form__label-check::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 22px;
+  width: 39px;
+  height: 39px;
+  background-image: url("../img/icon-checkbox-off.svg");
+}
+
+.form__radio:checked + .form__label-check::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 22px;
+  width: 41px;
+  height: 41px;
+  background-image: url("../img/icon-radio-on.svg");
+}
+
+.form__input-check:checked:hover + .form__label-check::after{
+  background-image: url("../img/icon-checkbox-on-hover.svg");
+}
+
+.form__input-check:not(:checked):hover + .form__label-check::after {
+  background-image: url("../img/icon-checkbox-off-hover.svg");
+}
+
+.form__input-check:checked:active + .form__label-check::after{
+  background-image: url("../img/icon-checkbox-on-active.svg");
+}
+
+.form__input-check:not(:checked):active + .form__label-check::after {
+  background-image: url("../img/icon-checkbox-off-active.svg");
+}
+
+.form__radio:checked:hover + .form__label-check::after{
+  background-image: url("../img/icon-radio-on-hover.svg");
+}
+
+.form__radio:not(:checked):hover + .form__label-check::after {
+  background-image: url("../img/icon-radio-off-hover.svg");
+}
+
+.form__radio:checked:active + .form__label-check::after{
+  background-image: url("../img/icon-radio-on-active.svg");
+}
+
+.form__radio:not(:checked):active + .form__label-check::after {
+  background-image: url("../img/icon-radio-off-active.svg");
+}
+
+.form__radio:not(:checked) + .form__label-check::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 22px;
+  width: 41px;
+  height: 41px;
+  background-image: url("../img/icon-radio-off.svg");
+}
+
+.form__field--aplication .form__label-check {
+  margin-left: 90px;
+}
+
 .form__label-check {
+  margin-left: 79px;
   font-size: 18px;
   line-height: 30px;
   color: @darkgrey;
@@ -180,12 +267,6 @@
     margin-bottom: 65px;
   }
 
-  .form__radio,
-  .form__input-check {
-    margin-left: 82px;
-    margin-right: 22px;
-  }
-
   .form__field--user-name {
     border: none;
   }
@@ -199,6 +280,28 @@
     display: flex;
     align-items: baseline;
   }
+
+  .form__field--achievements,
+  .form__field--aplication {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .form__input-check:checked + .form__label-check::after,
+  .form__input-check:not(:checked) + .form__label-check::after,
+  .form__radio:checked + .form__label-check::after,
+  .form__radio:not(:checked) + .form__label-check::after {
+    left: 60px;
+  }
+
+  .form__field--aplication .form__label-check {
+    margin-left: 119px;
+  }
+
+  .form__label-check {
+    margin-left: 117px;
+  }
+
 
   .form__field--aplication {
     grid-row-start: 2;
@@ -221,6 +324,7 @@
     position: absolute;
     top: 33px;
     right: 60px;
+    z-index: 1;
   }
 
   .form__field--contacts::after {
@@ -295,6 +399,15 @@
     grid-row-end: 2;
   }
 
+  .form__input-check:checked + .form__label-check::after,
+  .form__input-check:not(:checked) + .form__label-check::after {
+    left: 0;
+  }
+
+  .form__label-check {
+    margin-left: 62px;
+  }
+
   .form__field--contacts {
     width: 936px;
     margin-top: 65px;
@@ -325,7 +438,7 @@
   .form__field--achievements {
     width: 940px;
     padding-top: 47px;
-    padding-bottom: 11px;
+    padding-bottom: 0;
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
@@ -333,7 +446,8 @@
   }
 
   .form__field--achievements .form__list {
-    width: 817px;
+    padding-left: 60px;
+    padding-right: 30px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -341,7 +455,7 @@
   }
 
   .form__item--2 {
-   order: 3;
+    order: 3;
   }
 
   .form__item--3 {
@@ -357,11 +471,11 @@
   }
 
   .form__item--6 {
-   order: 5;
+    order: 5;
   }
 
   .form__field--achievements .form__item {
-    width: 240px;
+    width: 255px;
   }
 
   .form__input-check {
