@@ -1,11 +1,24 @@
 .rates {
+  position: relative;
   background-color: @grey;
   width: auto;
   padding-right: 0;
   padding-left: 0;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 120px;
+  padding-bottom: 40px;
   overflow: hidden;
+}
+
+.rates__triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.rates__svg {
+  width: 100%;
+  height: auto;
 }
 
 .rates__buttons {
@@ -117,9 +130,25 @@
   content: attr(data-label);
 }
 
-.rates__img {
-  margin-right: 19px;
+.rates__svg-yes,
+.rates__svg-no {
   float: right;
+}
+
+.rates__svg-yes {
+  margin-right: 19px;
+}
+
+.rates__svg-no {
+  margin-right: 22px;
+}
+
+.rates__svg-yes {
+  fill: @svggreen;
+}
+
+.rates__svg-no {
+  fill: @svgred;
 }
 
 .rates__price {
@@ -164,8 +193,12 @@
     display: none;
   }
 
-  .rates__img {
+  .rates__svg-yes {
     margin-right: 50px;
+  }
+
+  .rates__svg-no {
+    margin-right: 53px;
   }
 
   .rates__td::before {
@@ -192,6 +225,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .rates {
+    padding-top: 159px;
+  }
+
   .rates__td,
   .rates__th-row {
     font-size: 18px;
@@ -204,8 +241,12 @@
     width: 234px;
   }
 
-  .rates__img {
-    margin-right: 50%;
+  .rates__svg-yes {
+    margin-right: 45%;
+  }
+
+  .rates__svg-no {
+    margin-right: 47%;
   }
 
   .rates__price {

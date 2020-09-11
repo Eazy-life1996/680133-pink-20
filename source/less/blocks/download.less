@@ -1,8 +1,5 @@
 .intro-download {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 320px;
+  width: 100%;
   background-color: @darkgrey;
   padding-top: 28px;
   padding-bottom: 10px;
@@ -47,10 +44,12 @@
 
 @media (min-width: @tablet-width) {
   .intro-download {
-    top: 348px;
-    left: 20px;
+    position: absolute;
     width: 300px;
     background: none;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-top: 105px;
   }
 
   .btn-link {
@@ -69,8 +68,8 @@
 
 @media (min-width: @desktop-width) {
   .intro-download {
-    top: 420px;
-    left: 130px;
+   margin-left: 130px;
+   margin-top: 185px;
   }
 
   .intro-download__list {

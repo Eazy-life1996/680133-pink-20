@@ -20,6 +20,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([autoprefixer()]))
     .pipe(csso())
     .pipe(rename("styles.min.css"))
@@ -64,10 +65,10 @@ const webpImage = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
     .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 };
 
-exports.webpImage = webpImage;
+exports.webp = webpImage;
 
 //copy
 
@@ -100,7 +101,6 @@ exports.clean = clean;
 //build
 
 const build = gulp.series(clean, copy, styles, sprite);
-
 exports.build = build;
 
 // Server
@@ -119,11 +119,28 @@ const server = (done) => {
 
 exports.server = server;
 
+// HTML
+
+const html = () => {
+  return gulp
+  .src("source/*.html")
+  .pipe(gulp.dest("build/"));
+};
+exports.html = html;
+
+// refresh
+
+const refresh = (done) => {
+  sync.reload();
+  done();
+};
+exports.refresh = refresh;
+
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/less/**/*.less", gulp.series(styles));
+  gulp.watch("source/*.html", gulp.series(html, refresh));
 };
 
 exports.default = gulp.series(build, server, watcher);

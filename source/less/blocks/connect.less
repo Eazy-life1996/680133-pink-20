@@ -3,6 +3,17 @@
   text-align: center;
 }
 
+.connect__triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.connect__svg {
+  height: auto;
+  width: 100vw;
+}
+
 .connect__title {
   font-size: 24px;
   font-weight: normal;
@@ -25,7 +36,8 @@
 }
 
 .connect__map {
-  width: 320px;
+  width: 100vw;
+  position: relative;
   padding-right: 0px;
   padding-left: 0px;
   margin-left: -20px;
@@ -34,6 +46,8 @@
 
 .connect__iframe {
   border: none;
+  width: 100vw;
+  height: 200px;
 }
 
 @media (min-width: @tablet-width) {
@@ -64,7 +78,6 @@
   }
 
   .connect__iframe {
-    width: 660px;
     height: 374px;
   }
 }
@@ -83,9 +96,6 @@
   }
 
   .connect__iframe {
-    box-sizing: content-box;
     height: 502px;
-    width: 1200px;
-    margin-left: -110px;
   }
 }

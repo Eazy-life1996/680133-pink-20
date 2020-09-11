@@ -1,8 +1,17 @@
 .intro {
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-color: @darkgrey;
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-size: 100% auto;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+.intro__inner {
   position: relative;
   min-height: 237px;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
-  background-repeat: no-repeat;
   padding-right: 0;
   padding-left: 0;
 }
@@ -13,13 +22,18 @@
   line-height: 120%;
   color: @white;
   text-align: center;
-  padding-top: 95px;
+  padding-top: 100px;
+  padding-bottom: 49px;
   width: 280px;
   margin: 0 auto;
 }
 
-.intro--home {
-  min-height: 733px;
+.intro__title--photo {
+  padding-bottom: 81px;
+}
+
+.intro__title--home {
+  padding-bottom: 34px;
 }
 
 /*Брэкпоинты*/
@@ -28,44 +42,52 @@
   .intro {
     background-image: url(../img/bg-back-tablet@1x.jpg);
     background-position: center top;
+    background-size: auto;
     min-height: 440px;
-  }
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/bg-back-tablet@2x.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .intro--home {
     min-height: 729px;
-    background-position: center;
-    background-size: cover;
   }
 
   .intro__title {
     font-size: 50px;
     line-height: 68px;
     width: 550px;
-    padding-top: 175px;
+    padding-top: 188px;
   }
 
   .intro__title--home {
     position: absolute;
-    top: 210px;
-    left: 70px;
+    margin-top: 200px;
+    margin-left: 50px;
     font-size: 40px;
     line-height: 120%;
-    width: 200px;
+    width: 240px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding: 0;
+    z-index: 1;
+  }
+
+  .intro__block-image {
+    position: absolute;
+    top: 77.5%;
+    left: -30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .intro {
+    min-height: 394px;
     background-image: url(../img/bg-back-desktop@1x.jpg);
-  }
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-position: center top;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .intro--home {
@@ -74,12 +96,19 @@
 
   .intro__title {
     width: 747px;
+    padding-bottom: 0;
   }
 
   .intro__title--home {
     width: 300px;
-    left: 130px;
+    margin-top: 210px;
+    margin-left: 130px;
     font-size: 50px;
     line-height: 68px;
+  }
+
+  .intro__block-image {
+    top: 87.7%;
+    left: 149px;
   }
 }
