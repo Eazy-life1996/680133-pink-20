@@ -1,4 +1,5 @@
 .connect {
+  padding-top: 28px;
   background-color: @white;
   text-align: center;
 }
@@ -16,7 +17,7 @@
 
 .connect__title {
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 120%;
   color: @darkgrey;
 }
@@ -25,6 +26,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 35px;
 }
 
 .connect__p {
@@ -40,8 +42,8 @@
   position: relative;
   padding-right: 0px;
   padding-left: 0px;
-  margin-left: -20px;
   margin-top: 30px;
+  height: 200px;
 }
 
 .connect__iframe {
@@ -51,8 +53,13 @@
 }
 
 @media (min-width: @tablet-width) {
+  .connect {
+    padding-top: 12px;
+  }
+
   .connect__list {
     margin: 0 auto;
+    margin-top: -18px;
     width: 620px;
     display: flex;
     justify-content: space-around;
@@ -63,8 +70,12 @@
     width: 240px;
   }
 
+  .connect__item:first-child {
+    margin-right: 17px;
+  }
+
   .connect__p {
-    margin-bottom: 7px;
+    margin-bottom: 3px;
   }
 
   .connect__title {
@@ -77,25 +88,47 @@
     margin-top: 25px;
   }
 
+  .connect__map,
   .connect__iframe {
-    height: 374px;
+    height: 364px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .connect {
+    padding-top: 17px;
+  }
+
   .connect__list {
-    width: 863px;
+    width: auto;
+    justify-content: start;
+  }
+
+  .connect__title {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .connect__item:first-child {
+    margin-left: 30px;
+    margin-right: 94px;
   }
 
   .connect__item:last-child {
     margin-top: 0;
+    margin-right: 94px;
   }
-
+  
   .connect__item:nth-child(2) {
     order: 2;
   }
 
+  .connect__link {
+    margin-top: 19px;
+  }
+  
+  .connect__map,
   .connect__iframe {
-    height: 502px;
+    height: 492px;
   }
 }

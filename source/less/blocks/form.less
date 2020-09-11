@@ -320,25 +320,28 @@
     grid-row-end: 4;
   }
 
-  .form__field--contacts::before {
+  .form__item {
+    position: relative;
+  }
+
+  .form__item--phone::before,
+  .form__item--email::before {
     content: "";
     position: absolute;
-    top: 48.5px;
-    right: 60px;
-    background-image: url(../img/phone-1.svg);
+    top: 19px;
+    right: 2px;
     width: 59px;
-    height: 56px;
+    height: 55px;
     z-index: 1;
   }
 
-  .form__field--contacts::after {
-    content: "";
-    position: absolute;
-    top: 177px;
-    right: 60px;
+  .form__item--phone::before {
+    background-image: url(../img/phone-1.svg);
+    height: 55px;
+  }
+
+  .form__item--email::before {
     background-image: url(../img/mail-1.svg);
-    width: 58.5px;
-    height: 56px;
   }
 
   .form__field--contacts .form__item {
@@ -419,14 +422,9 @@
     grid-row-end: 3;
   }
 
-  .form__field--contacts::before {
-    top: 48.4px;
-    left: 389px;
-  }
-
-  .form__field--contacts::after {
-    top: 48.4px;
-    right: 76px;
+  .form__item--phone::before,
+  .form__item--email::before {
+    right: 39px;
   }
 
   .form__field--contacts .form__list {

@@ -2,11 +2,17 @@
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-color: @darkgrey;
   background-repeat: no-repeat;
-  background-position: center 10px;
-  background-size: 100% auto;
+  background-position: center -5px;
+  background-size: cover;
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
+}
+
+.intro--home {
+  background-position: center -7px;
+  background-size: contain;
+  min-height: 733px;
 }
 
 .intro__inner {
@@ -19,21 +25,22 @@
 .intro__title {
   font-weight: 300;
   font-size: 24px;
-  line-height: 120%;
+  line-height: 33px;
   color: @white;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 49px;
+  padding-top: 90px;
+  padding-bottom: 51px;
   width: 280px;
   margin: 0 auto;
 }
 
 .intro__title--photo {
-  padding-bottom: 81px;
+  padding-bottom: 79px;
 }
 
 .intro__title--home {
-  padding-bottom: 34px;
+  padding-top: 86px;
+  padding-bottom: 29px;
 }
 
 /*Брэкпоинты*/
@@ -41,8 +48,8 @@
 @media (min-width: @tablet-width) {
   .intro {
     background-image: url(../img/bg-back-tablet@1x.jpg);
-    background-position: center top;
-    background-size: auto;
+    background-position: center -3px ;
+    background-size: 184%;
     min-height: 440px;
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -51,18 +58,20 @@
 
   .intro--home {
     min-height: 729px;
+    background-position: center top;
+    background-size: cover;
   }
 
   .intro__title {
     font-size: 50px;
     line-height: 68px;
     width: 550px;
-    padding-top: 188px;
+    padding-top: 173px;
   }
 
   .intro__title--home {
     position: absolute;
-    margin-top: 200px;
+    margin-top: 202px;
     margin-left: 50px;
     font-size: 40px;
     line-height: 120%;
@@ -76,7 +85,7 @@
   .intro__block-image {
     position: absolute;
     top: 77.5%;
-    left: -30px;
+    left: -20px;
   }
 }
 
@@ -84,7 +93,8 @@
   .intro {
     min-height: 394px;
     background-image: url(../img/bg-back-desktop@1x.jpg);
-    background-position: center top;
+    background-position: center 10px ;
+    background-size: 215%;
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
@@ -109,6 +119,6 @@
 
   .intro__block-image {
     top: 87.7%;
-    left: 149px;
+    left: 147px;
   }
 }

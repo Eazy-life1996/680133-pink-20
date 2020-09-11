@@ -1,9 +1,7 @@
 .page-footer {
   background-color: @white;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-top: 38px;
+  min-height: 284px;
 }
 
 .page-footer__list {
@@ -11,8 +9,8 @@
   margin: 0;
   padding: 0;
   width: 172px;
-  margin: 0 auto;
-  margin-top: 40px;
+  margin-left: 51px;
+  margin-top: 34px;
   display: grid;
   grid-template-columns: 48px 48px 48px;
   column-gap: 14px;
@@ -20,7 +18,7 @@
 
 .page-footer__logo-link {
   width: 145px;
-  margin: 0 auto;
+  margin-left: 67px;
 }
 
 .page-footer__svg {
@@ -38,14 +36,14 @@
   display: flex;
   width: 130px;
   margin: 0 auto;
-  margin-top: 41px;
-  align-items: flex-end;
+  margin-top: 31px;
+  align-content: center;
 }
 
 .page-footer__link {
   position: relative;
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   border: 3px solid fade(@darkgrey, 10%);
   border-radius: 50%;
   &:hover,
@@ -86,7 +84,7 @@
 .page-footer__description {
   font-size: 14px;
   line-height: 18px;
-  margin-right: 13px;
+  margin-right: 9px;
   color: @darkgrey;
 }
 
@@ -97,24 +95,55 @@
 @media (min-width: @tablet-width) {
   .page-footer {
     display: flex;
-    align-items: center;
     min-height: 127px;
     padding: 0;
+    padding-top: 36px;
   }
+
+  .page-footer__logo-link {
+    margin: 0;
+    margin-left: 20px;
+  }
+
   .page-footer__list {
-    margin-bottom: 30px;
+    margin: 0;
+    margin-left: 75px;
   }
+
   .page-footer__developer {
-    align-self: center;
-    margin-bottom: 30px;
+    margin: 0;
+    // margin-bottom: 62px;
+    margin-left: auto;
+    margin-right: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    align-items: center;
     min-height: 197px;
-    padding: 0;
+    padding-top: 68px;
+  }
+
+  .page-footer__logo-link {
+    margin-left: 130px;
+  }
+
+  .page-footer__list {
+    margin-left: 239px;
+    margin-top: 2px;
+    column-gap: 11px;
+  }
+
+  .page-footer__developer {
+    margin-right: 132px;
+    margin-bottom: 77px;
+    width: 153px;
+  }
+  
+  .page-footer__description {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 25px;
   }
 
   .page-footer__svg-mobile {

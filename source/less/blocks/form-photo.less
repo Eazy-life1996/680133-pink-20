@@ -16,10 +16,10 @@
   padding: 0;
   position: relative;
   display: flex;
-  padding-bottom: 46px;
-  padding-left: 18px;
-  padding-right: 32px;
-  margin-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 36px;
+  padding-right: 50px;
+  margin-top: 45px;
   justify-content: space-between;
 }
 
@@ -102,13 +102,13 @@
   background-color: @pink;
 }
 
-.form-photo__btns {
+.form-photo__butons {
   position: relative;
-  margin-top: 28px;
+  margin-top: 29px;
   padding-top: 40px;
 }
 
-.form-photo__btns::before {
+.form-photo__butons::before {
   content: "";
   position: absolute;
   top: 0;
@@ -119,10 +119,10 @@
 }
 
 .form-photo__button {
-  width: calc(100% - 80px);
-  margin-left: 40px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  width: calc(100% - 40px);
+  margin-left: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-radius: 30px;
   font-weight: bold;
   font-size: 18px;
@@ -144,7 +144,7 @@
 @media (min-width: @tablet-width) {
   .form-photo {
     padding-top: 57px;
-    padding-bottom: 53px;
+    padding-bottom: 35px;
     display: flex;
   }
 
@@ -161,8 +161,8 @@
     flex-direction: column;
   }
 
-  .form-photo__fieldset:last-child {
-    margin-top: auto;
+  .form-photo__butons::before {
+    display: none;
   }
 
   .form-photo__list {
@@ -177,7 +177,7 @@
     position: relative;
     flex-direction: row-reverse;
     align-items: center;
-    height: 40px;
+    height: 54px;
     padding-bottom: 15px;
   }
 
@@ -218,13 +218,10 @@
     height: 400px;
   }
 
-  .form-photo__btns::before {
-    display: none;
-  }
-
   .form-photo__button {
-    width: calc(100% - 15px);
-    margin-left: 5px;
+    width: calc(100% - 20px);
+    margin-left: 2px;
+    margin-bottom: 21px;
   }
 
   .form-photo__icon--contrast {

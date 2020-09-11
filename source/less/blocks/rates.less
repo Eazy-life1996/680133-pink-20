@@ -4,7 +4,7 @@
   width: auto;
   padding-right: 0;
   padding-left: 0;
-  padding-top: 120px;
+  padding-top: 108px;
   padding-bottom: 40px;
   overflow: hidden;
 }
@@ -22,15 +22,15 @@
 }
 
 .rates__buttons {
-  width: 56px;
-  margin: 0 auto;
-  margin-top: 40px;
+  width: 92px;
+  margin-left: 133px;
+  margin-top: 38px;
   display: flex;
   align-items: center;
 }
 
 .rates__toggle {
-  margin-right: 13px;
+  margin-right: 16px;
 }
 
 .rates__toggle:last-child {
@@ -47,7 +47,7 @@
 
 .rates__table {
   position: relative;
-  width: 93%;
+  width: 90%;
   margin: 0 auto;
   table-layout: fixed;
   border-collapse: collapse;
@@ -55,20 +55,21 @@
 
 .rates__hit {
   position: absolute;
-  top: 0;
-  margin-left: -2px;
+  top: -1px;
+  margin-left: -3px;
 }
 
 .rates__td {
-  width: 93%;
+  width: 90%;
+  height: 62px;
 }
 
 .rates__th {
-  padding: 0;
   background: @darkgrey;
   border: 2px solid @darkgrey;
   border-radius: 1px 0px 0px 0px;
   color: @white;
+  padding-bottom: 9px;
 }
 
 .radio-1:checked ~ .rates__inner-slider {
@@ -86,8 +87,8 @@
 .radio-1:checked ~ .rates__buttons .rates__toggle--1,
 .radio-2:checked ~ .rates__buttons .rates__toggle--2,
 .radio-3:checked ~ .rates__buttons .rates__toggle--3 {
-  width: 9px;
-  height: 9px;
+  width: 12px;
+  height: 12px;
   background-color: @white;
   border: 3px solid @darkgrey;
 }
@@ -118,9 +119,9 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
-  padding-left: 15px;
-  padding-top: 12px;
-  padding-bottom: 13px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 14px;
   background: @white;
   border: 2px solid @lightgrey;
   border-radius: 1px 0px 0px 0px;
@@ -136,11 +137,12 @@
 }
 
 .rates__svg-yes {
-  margin-right: 19px;
+  margin-top: 3px;
+  margin-right: 15px;
 }
 
 .rates__svg-no {
-  margin-right: 22px;
+  margin-right: 18px;
 }
 
 .rates__svg-yes {
@@ -164,9 +166,15 @@
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 8px;
 }
 
 @media (min-width: @tablet-width) {
+  .rates {
+    padding-top: 80px;
+    height: 367px;
+  }
+
   .rates__th-row {
     display: block;
     border-right: none;
@@ -194,7 +202,7 @@
   }
 
   .rates__svg-yes {
-    margin-right: 50px;
+    margin-right: 49px;
   }
 
   .rates__svg-no {
@@ -207,12 +215,47 @@
 
   .rates__td,
   .rates__th-row {
+    height: 46px;
     text-transform: none;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 12px;
+    padding-right: 9px;
     padding-bottom: 6px;
     padding-top: 6px;
     width: 153px;
+  }
+
+  .rates__th {
+    padding: 0;
+    border: 2px solid @darkgrey;
+    border-radius: 1px 0 0 0;
+    border: none;
+  }
+
+  .rates__th:nth-child(2) {
+    border-radius: 4px 0 0 0;
+  }
+
+  .rates__th:nth-child(4) {
+    border-radius: 0 4px 0 0;
+  }
+
+  .rates__th:nth-child(3) .rates__title,
+  .rates__th:nth-child(3) .rates__price,
+  .rates__th:nth-child(4) .rates__title,
+  .rates__th:nth-child(4) .rates__price {
+    margin-left: 5px;
+  }
+
+  .rates__th:nth-child(3) {
+    width: 155px;
+  }
+
+  .rates__title {
+    margin-top: 12px;
+  }
+
+  .rates__price {
+    margin-top: -15px;
   }
 
   .rates__th--none {
@@ -220,17 +263,24 @@
   }
 
   .rates__hit {
+    top: 0;
     margin-left: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .rates {
-    padding-top: 159px;
+    padding-top: 119px;
+    height: 496px;
+  }
+
+  .rates__table {
+    margin-bottom: 20px;
   }
 
   .rates__td,
   .rates__th-row {
+    height: 60px;
     font-size: 18px;
     line-height: 30px;
     text-transform: none;
@@ -238,7 +288,12 @@
     padding-bottom: 13px;
     padding-left: 22px;
     padding-right: 10px;
-    width: 234px;
+    width: 235px;
+  }
+
+  .rates__th {
+    padding-top: 9px;
+    padding-bottom: 10px;
   }
 
   .rates__svg-yes {
@@ -246,14 +301,19 @@
   }
 
   .rates__svg-no {
-    margin-right: 47%;
+    margin-right: 46%;
   }
 
   .rates__price {
-    margin-bottom: 20px;
+    margin-top: 1px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .rates__title {
-    margin-top: 22px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 8px;
+    margin-bottom: 0;
   }
 }
