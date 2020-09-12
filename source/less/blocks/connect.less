@@ -1,5 +1,6 @@
 .connect {
-  padding-top: 28px;
+  padding-top: 21px;
+  padding-bottom: 8px;
   background-color: @white;
   text-align: center;
 }
@@ -8,11 +9,11 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.connect__svg {
-  height: auto;
-  width: 100vw;
+  background-image: url(../img/bg-triangle-white-footer.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 32px;
+  width: 100%;
 }
 
 .connect__title {
@@ -57,6 +58,10 @@
     padding-top: 12px;
   }
 
+  .connect__triangle {
+    height: 75px;
+  }
+
   .connect__list {
     margin: 0 auto;
     margin-top: -18px;
@@ -90,6 +95,7 @@
 
   .connect__map,
   .connect__iframe {
+    margin: 0;
     height: 364px;
   }
 }

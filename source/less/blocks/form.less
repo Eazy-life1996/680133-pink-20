@@ -23,13 +23,38 @@
   flex-direction: column;
 }
 
-.form__radio {
-  margin-right: 20px;
+.form__field--user-name {
+  padding-top: 7px;
+}
+
+.form__field--user-name .form__label {
+  margin-left: 20px;
+}
+
+.form__field--contacts {
+  padding-bottom: 45px;
+}
+
+.form__field--contacts .form__label {
   margin-left: 22px;
 }
 
+.form__radio {
+  margin-right: 20px;
+  margin-left: 19px;
+}
+
+.form__field--aplication {
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+
+.form__field--aplication .form__legend {
+  padding-top: 40px;
+}
+
 .form__field--aplication .form__item {
-  margin-bottom: 48px;
+  margin-bottom: 45px;
 }
 
 .form__field--aplication .form__item:last-child {
@@ -38,12 +63,12 @@
 
 .form__field--user-name .form__input,
 .form__field--contacts .form__input {
-  margin-top: 17px;
+  margin-top: 5px;
 }
 
 .form__field--user-name .form__item,
 .form__field--contacts .form__item {
-  margin-bottom: 29px;
+  margin-bottom: 18px;
 }
 
 .form__field--user-name .form__item:last-child,
@@ -56,7 +81,12 @@
 }
 
 .form__field--achievements .form__item {
-  margin-bottom: 45px;
+  margin-bottom: 52px;
+}
+
+.form__field--achievements {
+  padding-top: 41px;
+  padding-bottom: 49px;
 }
 
 .form__list {
@@ -85,8 +115,9 @@
 
 .form__legend--grey {
   background-color: @grey;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 42px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .form__label {
@@ -132,7 +163,7 @@
 .form__input-radio:checked + .form__label-radio::after {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -5px;
   left: 22px;
   width: 41px;
   height: 41px;
@@ -142,7 +173,7 @@
 .form__input-radio:not(:checked) + .form__label-radio::after {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -5px;
   left: 22px;
   width: 41px;
   height: 41px;
@@ -182,7 +213,10 @@
 }
 
 .form__label-radio {
+  font-size: 18px;
+  line-height: 30px;
   margin-left: 90px;
+  color: @darkgrey;
 }
 
 .form__label-check {
@@ -194,11 +228,11 @@
 
 .form__input {
   border: 2px solid @lightgrey;
-  border-radius: 1px;
-  width: 276px;
-  padding-top: 12px;
+  border-radius: 2px;
+  width: 277px;
+  padding-top: 15px;
   padding-bottom: 13px;
-  padding-left: 20px;
+  padding-left: 18px;
   outline: none;
   &:hover {
     border: 2px solid @darkgrey;
@@ -210,18 +244,22 @@
   }
 }
 
-.form__input[placeholder] {
-  font-size: 18px;
+.form__input[value] {
+  font-size: 19px;
   line-height: 30px;
   color: @darkgrey;
 }
 
+.form__legend--center {
+  padding-top: 35px;
+}
+
 .form__comment {
   width: 276px;
-  min-height: 197px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 25px;
+  min-height: 199px;
+  margin-top: -12px;
+  padding-top: 12px;
+  padding-left: 18px;
   border: 2px solid @lightgrey;
   border-radius: 1px;
   font-family: inherit;
@@ -232,7 +270,7 @@
 }
 
 .form__p-info {
-  margin-top: 46px;
+  margin-top: 34px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -244,8 +282,16 @@
   color: @pink;
 }
 
+.form__button-block {
+  padding-top: 5px;
+}
+
 .form__button {
-  width: 276px;
+  width: 279px;
+}
+
+.form__p-info--desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -269,21 +315,38 @@
     background-color: @white;
     border: 2px solid @grey;
     border-radius: 1px;
-    margin-bottom: 65px;
   }
 
   .form__field--user-name {
     border: none;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+  }
+
+  .form__field--user-name .form__label {
+    margin-left: 0;
+  }
+
+  .form__field--user-name .form__item:first-child {
+    margin-top: 0;
+  }
+
+  .form__field--user-name .form__item {
+    margin-top: 49px;
   }
 
   .form__field--user-name .form__input {
-    margin-left: 20px;
+    margin-left: 18px;
     flex-grow: 1;
   }
 
   .form__field--user-name .form__label {
     display: flex;
     align-items: baseline;
+  }
+
+  .form__field--aplication .form__legend {
+    padding-top: 0;
   }
 
   .form__field--achievements,
@@ -308,19 +371,23 @@
   }
 
   .form__field--aplication {
+    padding-top: 47px;
+    padding-bottom: 58px;
+    margin-bottom: 60px;
     grid-row-start: 2;
     grid-row-end: 3;
   }
 
   .form__field--contacts {
     position: relative;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 30px;
+    padding-bottom: 27px;
+    margin-bottom: 60px;
     grid-row-start: 3;
     grid-row-end: 4;
   }
 
-  .form__item {
+  .form__field--contacts .form__item {
     position: relative;
   }
 
@@ -328,16 +395,15 @@
   .form__item--email::before {
     content: "";
     position: absolute;
-    top: 19px;
+    top: 7px;
     right: 2px;
     width: 59px;
-    height: 55px;
+    height: 58px;
     z-index: 1;
   }
 
   .form__item--phone::before {
     background-image: url(../img/phone-1.svg);
-    height: 55px;
   }
 
   .form__item--email::before {
@@ -351,17 +417,36 @@
     margin: 0 auto;
   }
 
+  .form__field--contacts .form__item:first-child {
+    margin-bottom: 24px;
+  }
+
   .form__field--contacts .form__input {
     width: 100%;
   }
 
   .form__field--contacts .form__label {
-    margin-top: 22px;
+    margin-top: 11px;
+    margin-left: 16px;
+  }
+
+  .form__field--achievements {
+    padding-top: 45px;
+    padding-bottom: 55px;
+    margin-bottom: 57px;
+  }
+
+  .form__field--reviews {
+    padding-top: 48px;
+    padding-bottom: 45px;
+    margin-bottom: 55px;
   }
 
   .form__comment {
+    padding-top: 15px;
+    padding-left: 15px;
     width: 496px;
-    min-height: 189px;
+    min-height: 193px;
     margin-left: 60px;
   }
 
@@ -372,8 +457,13 @@
     margin-bottom: 50px;
   }
 
+  .form__p-info {
+    margin-top: 25px;
+  }
+
   .form__button {
-    width: 296px;
+    margin-top: 5px;
+    width: 300px;
   }
 }
 
@@ -386,7 +476,7 @@
 
   .form__field--user-name {
     width: 433px;
-    padding-top: 0;
+    padding-top: 10px;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
@@ -399,9 +489,10 @@
 
   .form__field--aplication {
     width: 431px;
-    min-height: 291px;
+    min-height: 307px;
     margin-left: 45px;
-    padding-top: 52px;
+    padding-left: 10px;
+    padding-top: 48px;
     grid-row-start: 1;
     grid-row-end: 2;
   }
@@ -418,19 +509,26 @@
   .form__field--contacts {
     width: 936px;
     margin-top: 65px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
     grid-row-start: 2;
     grid-row-end: 3;
   }
 
+  .form__field--contacts .form__item:first-child {
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
+
   .form__item--phone::before,
   .form__item--email::before {
-    right: 39px;
+    right: 4px;
   }
 
   .form__field--contacts .form__list {
     display: flex;
     width: 816px;
-    margin-left: 80px;
   }
 
   .form__field--contacts .form__input {
@@ -439,8 +537,9 @@
 
   .form__field--achievements {
     width: 940px;
-    padding-top: 47px;
-    padding-bottom: 0;
+    padding-top: 46px;
+    padding-left: 0;
+    padding-bottom: 10px;
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
@@ -449,11 +548,17 @@
 
   .form__field--achievements .form__list {
     padding-left: 60px;
-    padding-right: 30px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+  }
+
+  .form__field--achievements .form__item {
+    width: 265px;
+  }
+
+  .form__field--achievements .form__item {
+    margin-right: 46px;
   }
 
   .form__item--2 {
@@ -468,16 +573,22 @@
     order: 4;
   }
 
-  .form__item--5 {
+  .form__field--achievements .form__item--5 {
+    margin-right: 0;
+    margin-left: -12px;
+    width: 212px;
     order: 2;
   }
 
-  .form__item--6 {
+  .form__field--achievements .form__item--6 {
+    margin-right: 0;
+    margin-left: -12px;
+    width: 212px;
     order: 5;
   }
 
-  .form__field--achievements .form__item {
-    width: 271px;
+  .form__label-check {
+    margin-left: 57px;
   }
 
   .form__input-check {
@@ -486,13 +597,24 @@
 
   .form__field--reviews {
     width: 940px;
+    padding-top: 45px;
+    padding-bottom: 40px;
     grid-row-start: 4;
     grid-row-end: 5;
   }
 
+  .form__p-info--mobile {
+    display: none;
+  }
+
+  .form__p-info--desktop {
+    display: block;
+    margin-top: 15px;
+  }
+
   .form__comment {
     width: 816px;
-    min-height: 124px;
+    min-height: 127px;
   }
 
   .form__button-block {
