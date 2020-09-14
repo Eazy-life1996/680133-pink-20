@@ -291,11 +291,48 @@
   width: 279px;
 }
 
+.form__btn () {
+  border: none;
+  background-color: @green;
+  border: 2px solid @green;
+  border-radius: 1px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: @white;
+  cursor: pointer;
+  &:hover {
+    background-color: @green-hover;
+    border: 2px solid @green-hover;
+    border-radius: 1px;
+  }
+  &:active {
+    color: fade(@white, 30%);
+  }
+}
+
+.form__button--green {
+  .form__btn ();
+}
+
+.form__button--green:disabled {
+  background-color: @lightgrey;
+  border-color: @lightgrey;
+}
+
 .form__p-info--desktop {
   display: none;
 }
 
 //Модалки
+
+.form-modal__button--green {
+  .form__btn ();
+}
 
 .form-modal__title {
   font-size: 18px;

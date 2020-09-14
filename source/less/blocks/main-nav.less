@@ -6,6 +6,22 @@
   z-index: 1;
 }
 
+.main-nav__link {
+  text-decoration: none;
+  color: @white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  &:hover {
+    color: @pink;
+  }
+  &:active {
+    color: fade(@pink, 30%);
+  }
+}
+
 .main-nav__inner {
   width: 100%;
   padding-right: 0px;
@@ -205,6 +221,7 @@
       color: fade(@black, 30%);
     }
   }
+
   .main-nav__icon-mobile,
   .main-nav__icon-tablet {
     display: none;

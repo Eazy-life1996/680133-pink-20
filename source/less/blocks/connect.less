@@ -36,6 +36,22 @@
   margin-bottom: 0;
 }
 
+.connect__link {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-decoration: none;
+  color: @pink;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: @darkgrey;
+  }
+  &:active {
+    color: fade(@darkgrey, 30%);
+  }
+}
+
 @media (min-width: @tablet-width) {
   .connect {
     padding-top: 12px;

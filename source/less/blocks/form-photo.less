@@ -129,6 +129,36 @@
   line-height: 18px;
 }
 
+.form-photo__button--pink {
+  font-family: inherit;
+  border: 3px solid @pink;
+  color: @pink;
+  margin-bottom: 12px;
+  &:hover,
+  &:focus {
+    background-color: @pink;
+    color: @white;
+  }
+  &:active {
+    color: fade(@white, 30%);
+  }
+}
+
+.form-photo__button--grey {
+  font-family: inherit;
+  color: fade(@darkgrey, 10%);
+  border: 3px solid fade(@darkgrey, 10%);
+  &:hover {
+    border: 3px solid fade(@darkgrey, 30%);
+    color: fade(@darkgrey, 30%);
+  }
+  &:active {
+    border: 3px solid fade(@darkgrey, 10%);
+    background-color: fade(@darkgrey, 30%);
+    color: fade(@white, 30%);
+  }
+}
+
 .form-photo__icon {
   fill: fade(@darkgrey, 30%);
   &:hover,
