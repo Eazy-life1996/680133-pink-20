@@ -20,6 +20,7 @@
 
 .form__field--aplication {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -294,6 +295,82 @@
   display: none;
 }
 
+//Модалки
+
+.form-modal__title {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: @black;
+}
+
+.form-modal__button {
+  display: block;
+  width: 276px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.form-modal__description {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 51px;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: @darkgrey;
+}
+
+.form-modal--success {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 45px;
+  padding-bottom: 0;
+}
+
+.modal-s-show {
+  display: block;
+}
+
+.form-modal--failur {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 30px;
+}
+
+.modal-f-show {
+  display: block;
+}
+
+.form-modal {
+  z-index: 5;
+  width: 320px;
+  padding-top: 26px;
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 1px;
+  background-color: @white;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.form-modal--success .form-modal__description {
+  margin-bottom: 41px;
+}
+
+.form-modal__block--grey {
+  background-color: @grey;
+  max-width: 320px;
+  margin: 0 auto;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
 @media (min-width: @tablet-width) {
   .form {
     display: grid;
@@ -465,18 +542,56 @@
     margin-top: 5px;
     width: 300px;
   }
+
+  //Модалки
+
+  .form-modal {
+    width: 460px;
+    border-radius: 5px;
+  }
+
+  .form-modal__block--grey {
+    max-width: 460px;
+  }
+
+  .form-modal--success {
+    padding-top: 29px;
+  }
+
+  .form-modal__button {
+    width: 295px;
+  }
+
+  .form-modal__title {
+    font-size: 30px;
+    line-height: 40px;
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .form-modal__description {
+    font-size: 18px;
+    line-height: 24px;
+    width: 300px;
+  }
+
+  .form-modal--success .form-modal__description {
+    margin-bottom: 35px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .form {
     grid-template-columns: 433px 431px;
-    grid-template-rows: 300px auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     column-gap: 30px;
   }
 
   .form__field--user-name {
     width: 433px;
     padding-top: 10px;
+    padding-bottom: 0;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
@@ -489,10 +604,11 @@
 
   .form__field--aplication {
     width: 431px;
-    min-height: 307px;
+    min-height: 309px;
     margin-left: 45px;
     padding-left: 10px;
     padding-top: 48px;
+    margin-bottom: 0;
     grid-row-start: 1;
     grid-row-end: 2;
   }
@@ -508,22 +624,31 @@
 
   .form__field--contacts {
     width: 936px;
-    margin-top: 65px;
-    padding-bottom: 10px;
-    padding-left: 60px;
+    margin-top: 57px;
+    padding-bottom: 12px;
+    padding-left: 58px;
     padding-right: 60px;
     grid-row-start: 2;
     grid-row-end: 3;
   }
 
+  .form__field--contacts .form__item {
+    width: 371px;
+    margin-right: 70px;
+    height: 108px;
+  }
+
   .form__field--contacts .form__item:first-child {
     margin-bottom: 0;
-    margin-right: 70px;
+  }
+
+  .form__field--contacts .form__item:last-child {
+    margin-right: 0;
   }
 
   .form__item--phone::before,
   .form__item--email::before {
-    right: 4px;
+    right: 2px;
   }
 
   .form__field--contacts .form__list {
@@ -531,15 +656,11 @@
     width: 816px;
   }
 
-  .form__field--contacts .form__input {
-    width: 371px;
-  }
-
   .form__field--achievements {
     width: 940px;
     padding-top: 46px;
     padding-left: 0;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
@@ -549,16 +670,12 @@
   .form__field--achievements .form__list {
     padding-left: 60px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
 
   .form__field--achievements .form__item {
-    width: 265px;
-  }
-
-  .form__field--achievements .form__item {
-    margin-right: 46px;
+    width: 260px;
   }
 
   .form__item--2 {
@@ -598,7 +715,7 @@
   .form__field--reviews {
     width: 940px;
     padding-top: 45px;
-    padding-bottom: 40px;
+    padding-bottom: 38px;
     grid-row-start: 4;
     grid-row-end: 5;
   }
@@ -621,5 +738,44 @@
     grid-row-start: 5;
     grid-row-end: 6;
     width: 940px;
+  }
+
+  //Модалки
+
+  .form-modal {
+    width: 780px;
+    padding-top: 30px;
+  }
+
+  .form-modal--success {
+    padding-top: 22px;
+  }
+
+  .form-modal-failur {
+    padding-bottom: 0;
+  }
+
+  .form-modal--success .form-modal__button {
+    width: 456px;
+  }
+
+  .form-modal__block--grey {
+    max-width: 780px;
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .form-modal__block--desktop {
+    background-color: @grey;
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .form-modal__description {
+    width: 370px;
+  }
+
+  .form-modal__title {
+    width: 390px;
   }
 }

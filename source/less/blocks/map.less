@@ -1,0 +1,38 @@
+.map {
+  width: 100vw;
+  position: relative;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-top: 30px;
+  height: 200px;
+}
+
+.map__iframe {
+  border: none;
+  width: 100vw;
+  height: 200px;
+}
+
+.map__triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto; //НЕ ЗНАЮ КАК ПОДОГНАТЬ ПОД ПИКСЕЛЬ ПЕРФЕКТ
+}
+
+@media (min-width: @tablet-width) {
+  .map,
+  .map__iframe {
+    margin: 0;
+    height: 387px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map,
+  .map__iframe {
+    height: 515px;
+  }
+}

@@ -5,11 +5,11 @@ let form = document.querySelector(".form");
 let userName = document.querySelector(".form__input--name");
 let userSurname = document.querySelector(".form__input--surname");
 let userMail = document.querySelector(".form__input--email");
-let modalFail = document.querySelector(".modal-failur");
-let modalSuccess = document.querySelector(".modal-success");
+let modalFail = document.querySelector(".form-modal--failur");
+let modalSuccess = document.querySelector(".form-modal--success");
 let formButton = document.querySelector(".form__button");
-let buttonCloseFirst = document.querySelector(".modal__button-first-close");
-let buttonCloseSecond = document.querySelector(".modal__button-second-close");
+let buttonCloseFirst = document.querySelector(".form-modal__button-first-close");
+let buttonCloseSecond = document.querySelector(".form-modal__button-second-close");
 
 navMain.classList.remove("main-nav--nojs");
 
