@@ -14,9 +14,11 @@
   line-height: 32px;
   text-transform: uppercase;
   text-align: center;
+
   &:hover {
     color: @pink;
   }
+
   &:active {
     color: fade(@pink, 30%);
   }
@@ -24,8 +26,8 @@
 
 .main-nav__inner {
   width: 100%;
-  padding-right: 0px;
-  padding-left: 0px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .main-nav__list {
@@ -61,10 +63,12 @@
 
 .main-nav__button-svg {
   fill: @white;
+
   &:hover,
   &:focus {
     fill: @pink;
   }
+
   &:active {
     fill: fade(@white, 30%);
   }
@@ -112,7 +116,7 @@
   padding-bottom: 16px;
   padding-left: 10px;
   padding-right: 10px;
-  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   border-top: 1px solid @black;
 }
 
@@ -133,10 +137,12 @@
 
 .main-nav__svg {
   fill: @white;
+
   &:hover,
   &:focus {
     fill: @pink;
   }
+
   &:active {
     fill: fade(@white, 30%);
   }
@@ -217,6 +223,7 @@
     text-transform: none;
     font-weight: normal;
     line-height: 18px;
+
     &:active {
       color: fade(@black, 30%);
     }

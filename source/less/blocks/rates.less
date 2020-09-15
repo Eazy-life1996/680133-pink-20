@@ -64,7 +64,7 @@
 .rates__th {
   background: @darkgrey;
   border: 2px solid @darkgrey;
-  border-radius: 1px 0px 0px 0px;
+  border-radius: 1px 0 0 0;
   color: @white;
   padding-bottom: 9px;
 }
@@ -121,7 +121,7 @@
   padding-bottom: 14px;
   background: @white;
   border: 2px solid @lightgrey;
-  border-radius: 1px 0px 0px 0px;
+  border-radius: 1px 0 0 0;
 }
 
 .rates__td::before {
@@ -136,17 +136,11 @@
 .rates__svg-yes {
   margin-top: 3px;
   margin-right: 15px;
-}
-
-.rates__svg-no {
-  margin-right: 18px;
-}
-
-.rates__svg-yes {
   fill: @svggreen;
 }
 
 .rates__svg-no {
+  margin-right: 18px;
   fill: @svgred;
 }
 
@@ -186,12 +180,11 @@
   }
 
   .rates__price {
-    margin-bottom: 10px;
+    margin-top: -15px;
   }
 
   .rates__title {
-    margin-top: 11px;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
   }
 
   .rates__toggle {
@@ -225,7 +218,6 @@
     padding: 0;
     border: 2px solid @darkgrey;
     border-radius: 1px 0 0 0;
-    border: none;
   }
 
   .rates__th:nth-child(2) {
@@ -247,27 +239,19 @@
     width: 155px;
   }
 
-  .rates__title {
-    margin-top: 12px;
-  }
-
-  .rates__price {
-    margin-top: -15px;
-  }
-
   .rates__th-none {
     display: block;
   }
 
   .rates__hit {
-    top: 0;
+    top: -1px;
     margin-left: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .rates {
-    padding-top: 139px;
+    padding-top: 135px;
     height: 514px;
   }
 
@@ -291,7 +275,6 @@
 
   .rates__th {
     padding-top: 9px;
-    padding-bottom: 10px;
   }
 
   .rates__svg-yes {

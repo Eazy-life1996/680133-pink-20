@@ -44,10 +44,12 @@
     font-size: 14px;
     line-height: 24px;
     color: @pink;
+
     &:hover,
     &:focus {
       color: @darkgrey;
     }
+
     &:active {
       color: fade(@darkgrey, 30%);
     }
@@ -60,10 +62,6 @@
 
 @media (min-width: @desktop-width) {
   .effect {
-    padding-top: 48px;
-  }
-
-  .effect__block {
     padding-top: 48px;
   }
 
@@ -87,8 +85,9 @@
   }
 
   .effect__block {
-    margin-left: 72px;
     width: 535px;
+    margin-left: 72px;
+    padding-top: 48px;
   }
 
   .effect__description {
